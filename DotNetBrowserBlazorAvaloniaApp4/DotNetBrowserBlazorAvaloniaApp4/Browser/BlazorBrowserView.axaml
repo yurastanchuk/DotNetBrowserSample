@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avaloniaUi="clr-namespace:DotNetBrowser.AvaloniaUi;assembly=DotNetBrowser.AvaloniaUi"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="DotNetBrowserBlazorAvaloniaApp4.Browser.BlazorBrowserView">
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ZIndex="10" Background="Gray">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center"
+                        Margin="0 -32 0 0">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"
+                           Text="Loading..." FontSize="16" Foreground="White" />
+            </StackPanel>
+        </Grid>
+        <avaloniaUi:BrowserView x:Name="BrowserView" IsVisible="False" HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch" ZIndex="1000" />
+    </Grid>
+</UserControl>

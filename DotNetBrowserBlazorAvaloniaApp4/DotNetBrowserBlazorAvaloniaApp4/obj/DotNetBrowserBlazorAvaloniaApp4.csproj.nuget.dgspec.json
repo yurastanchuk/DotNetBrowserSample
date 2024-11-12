@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4.csproj": {}
+  },
+  "projects": {
+    "/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4.csproj",
+        "projectName": "DotNetBrowserBlazorAvaloniaApp4",
+        "projectPath": "/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4.csproj",
+        "packagesPath": "/Users/first/.nuget/packages/",
+        "outputPath": "/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/first/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.9, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.0.9, )"
+            },
+            "Avalonia.Diagnostics": {
+              "target": "Package",
+              "version": "[11.0.9, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.0.9, )"
+            },
+            "DotNetBrowser.AvaloniaUi": {
+              "target": "Package",
+              "version": "[2.27.5, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Mvc.RazorPages": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

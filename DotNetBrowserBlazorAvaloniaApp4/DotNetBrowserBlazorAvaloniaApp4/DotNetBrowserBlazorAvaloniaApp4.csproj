@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <RootNamespace>DotNetBrowserBlazorAvaloniaApp4</RootNamespace>
+        <RazorCompileOnBuild>true</RazorCompileOnBuild>
+        <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="wwwroot\favicon.png"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.0.9"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.9"/>
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.9"/>
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.9"/>
+        <PackageReference Include="DotNetBrowser.AvaloniaUi" Version="2.27.5"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="7.0.13"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView" Version="7.0.13"/>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.RazorPages" Version="2.2.5"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+    </ItemGroup>
+
+</Project>

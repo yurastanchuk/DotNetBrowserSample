@@ -1,0 +1,89 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DotNetBrowserBlazorAvaloniaApp4
+build_property.RootNamespace = DotNetBrowserBlazorAvaloniaApp4
+build_property.ProjectDir = /Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Browser/BlazorBrowserView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Main.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Pages/Counter.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Pages/Index.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/_Imports.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-l9y8fexph5
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ik8806vhsl
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/first/Desktop/Repos/DotNetBrowserSample/DotNetBrowserBlazorAvaloniaApp4/DotNetBrowserBlazorAvaloniaApp4/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
