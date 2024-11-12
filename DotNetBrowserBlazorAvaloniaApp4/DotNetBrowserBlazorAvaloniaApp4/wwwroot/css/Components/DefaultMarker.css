@@ -1,0 +1,14 @@
+﻿.default-marker {
+    width: 5px;
+    height: 5px;
+    background: var(--accent-color);
+    border-radius: 5px;
+    display: block;
+
+    /*the margin is for perceived centering*/
+    margin-top: 4px;
+}
+
+.default-marker.default {
+    display: none;
+}

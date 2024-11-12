@@ -1,0 +1,91 @@
+.data-grid { min-width: max-content; display: flex; flex-direction: column; }
+.data-grid::-webkit-scrollbar-track {
+    margin-top: var(--scrollbar-track_margin_top);
+    margin-bottom: var(--scrollbar-track_margin_bottom);
+}
+/*Don't set flex-grow because the wrong view when the grid has few entries.*/
+.data-grid__grid { justify-items: stretch; /*flex-grow: 1;*/ }
+
+/*This positions the empty state placeholder in the center of the grid vertically*/
+.data-grid__grid:has(.empty-state-placeholder) { flex-grow: 1;}
+.data-grid__indent-row { height: 8px; }
+.data-grid__grid_full-height { min-height: 100%; }
+
+
+.data-grid-header {
+    display: grid; 
+    grid-template-columns: subgrid;
+    grid-row: 1;
+    grid-column: span calc(var(--column-count) + 1);
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+.data-grid-header__setting-menu { color: var(--font-color);}
+.data-grid-header__setting-menu-header { width: 26px;  height: 26px;}
+
+.data-grid-header-cell_sortable:hover { color: white; cursor: pointer;}
+.data-grid-header-cell_align_left { justify-content: left;}
+.data-grid-header-cell_align_right {
+    justify-content: right;
+     /*14px is a width of the sorting arrow with the padding*/
+     /*If you uncomment this, then settings menu in the data grid won't work''*/
+     /*transform: translate(14px, 0);*/
+}
+.data-grid-header-cell__thumb-container { align-items: flex-start; flex-grow: 1; }
+.data-grid-header-cell__sort-arrow-container { gap: 4px; align-items: center;  }
+.data-grid-header-cell__sort-arrow { margin-top: 4px;}
+.data-grid-header-cell_nowrap {
+    white-space: nowrap;
+    display: flex;
+}
+.data-grid-header-cell_nowrap .data-grid-header-cell__header-span {
+    max-width: var(--header-span-max-width);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.data-grid-header-cell__shadow {
+    height: 24px;
+    width: 100%;
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.32), rgba(0,0,0,0));
+    pointer-events: none;
+}
+
+.data-grid-header-cell__thumb {
+    margin: 7px 0px;
+    width:6px;
+    border-right: 0px solid;
+    border-color: var(--border-color);
+    align-self: stretch;
+    cursor: ew-resize;
+}
+.data-grid-header__tail-header { }
+
+.data-grid-cell { display: flex; white-space: nowrap;}
+.data-grid-cell_align_left {justify-content: flex-start;}
+.data-grid-cell_align_right { justify-content: flex-end;}
+.data-grid-cell_selected { background-color: var(--overlay-accented-selected); }
+
+.data-grid__last-column { width: 0px; }
+.data-grid__last-column { width: 0px; }
+.data-grid-row {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / span calc(var(--column-count) + 1);
+}
+
+.data-grid-row_selectable > *:not(.context-menu) {cursor: pointer;}
+.data-grid-row_selectable:hover > *:not(.context-menu) { /* The last*/ background: var(--overlay-hovered); }
+.data-grid-row_selected > *:not(.context-menu) {
+    /* without !important background doesn't change after click while mouse is over the element */
+     background-color: var(--overlay-accented-selected)!important;
+     transition: background-color 150ms;
+}
+
+
+.data-grid-row-cell { display: flex; white-space: nowrap; align-items: center;}
+.data-grid-row-cell_align_right {justify-content: flex-end;}
+
+.data-grid-separator { pointer-events: none;}

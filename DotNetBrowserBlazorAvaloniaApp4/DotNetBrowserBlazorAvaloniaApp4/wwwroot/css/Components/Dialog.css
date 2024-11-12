@@ -1,0 +1,227 @@
+﻿.window-dialog {
+    display: flex;
+    justify-content: center;
+    /*
+        We need this because otherwise the .dialog-container takes full-height and there is 
+        a transparent area under the dialog and when the user click on this area the dialog isn't closing.
+        Remove this property and try to close, for example, DateRangeDialog by clicking under the dialog
+    */
+    align-items: flex-start;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.window-dialog__dialog-view { max-width: 100%; max-height: 100%; }
+
+.dialog {
+    color: rgba(0,0,0,0.86);
+    font-size: 16px;
+    background-color: var(--default-background);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 12px 24px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+}
+
+.dialog-button {
+    text-transform: uppercase;
+    color: var(--dialog-accent-color);
+    padding: 6px 14px;
+    font-weight: 700;
+}
+.dialog-button:hover {
+    background-color: rgba(var(--dialog-accent-color-rgb), 0.08);
+}
+
+.date-filter__dialog-button {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding: 6px 14px;
+    font-weight: 700;
+}
+.date-filter__dialog-button:hover {background-color: var(--overlay-hovered);}
+
+.dialog__close-button {
+    margin-top: -12px;
+    margin-right: -24px;
+    font-size: 14px;
+    color: rgba(0,0,0, 0.35);
+}
+
+    .dialog__close-button:hover {
+        color: black;
+        background: rgba(0,0,0, 0.1)
+    }
+
+.dialog__buttons-block {
+    margin-right: -12px;
+    margin-bottom: -8px;
+}
+
+.dialog-commands-block {
+    background: rgba(0,0,0,0.1);
+}
+
+.dialog__input {
+    background-color: #FFFFFF0D;
+    border: 0px;
+}
+
+.alias-dialog {
+    box-shadow: 0px 5px 22px 23px rgba(0,0,0,0.35);
+    border-radius: 4px;
+    background: #2a1010;
+    text-align: left;
+    font-weight: var(--font-weight-middle-priority);
+    overflow: hidden;
+}
+
+.alias-dialog_level_2 { background: #210C0C;}
+.alias-dialog__input { height: 30px; background: #210C0C;}
+.alias-dialog-player__input { background: #210C0C;}
+.alias-dialog-manual_player { border: solid 1px var( --font-color-middle-priority); height: 80px; border-radius: 4px; padding-left: 8px; padding-block: 32px;}
+
+.alias-dialog__add-button {
+    --accent-color-middle-priority: rgba(255,255,255,0.5);
+    --font-color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    color: white;
+}
+
+.alias-dialog__single-player-dialog__add-button {
+    text-transform: uppercase;
+    padding: 6px 24px;
+}
+
+.alias-dialog-button {
+    text-transform: uppercase;
+    color: #FFED00;
+    padding: 6px 24px;
+}
+
+    .alias-dialog-button:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.alias-dialog h1 {
+    font-size: 20px;
+}
+
+.dialog-container {
+    top: 10%;
+    position: relative;
+    height: 80%;
+}
+
+.dialog-container.BoardCategoryDialog {height: 90%}
+.dialog-container.ExportPackageDialog {height: 100%}
+.dialog-container.AliasDialog {height: 80%}
+.dialog-container.StatTestDialog {
+    box-shadow: 0px 5px 22px 23px rgb(0 0 0 / 35%);
+    height: fit-content;
+    max-height: 80vh;
+}
+.dialog-container.PlayerDialog {
+    position: absolute;
+    margin-top: 0;
+    top: 50px;
+    max-width: 95%;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.dialog-container.StatisticsReportDialog {
+    position: absolute;
+    margin-top: 0;
+    top: 50px;
+    max-width: 95%;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.dialog-container.HandFilterDialog {
+    justify-self: center;
+    max-width: 95%;
+    max-height: 80%;
+    height: 80%;
+    border-radius: 4px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.dialog-container.HandValueDialog {
+    justify-self: center;
+    max-width: 95%;
+    max-height: 80%;
+    height: 80%;
+    border-radius: 4px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.SearchStatDialog {
+    height: 100%;
+    justify-content: center;
+}
+
+.select-room-dialog {
+    max-height: 600px;
+}
+
+.message-box-dialog{
+    max-width: 420px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.import-from-database-modal { min-width: 358px;}
+.import-from-database-modal__loader { height: 32px;}
+
+.alias-dialog-players {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mass-clone-options__custom-filter-tab-content {
+    
+}
+.mass-clone-dialog__custom_stat {
+    background: rgba(11, 152, 185, 0.06);
+    border: solid 1px #0B98B9;
+}
+
+.common-config-dialog {
+    box-shadow: 0px 5px 22px 23px rgba(0,0,0,0.35);
+    border-radius: 4px;
+    background: #2a1010;
+    text-align: left;
+    font-weight: var(--font-weight-middle-priority);
+    overflow: hidden;
+    padding: 20px 24px;
+    padding-bottom: 8px;
+}
+
+.common-config-dialog__button {
+    text-transform: uppercase;
+    color: #FFED00;
+    padding: 6px 24px;
+}
+
+    .common-config-dialog__button:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.common-config-dialog h1 {
+    font-size: 20px;
+}
+
+.common-config-dialog__items {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -1,0 +1,205 @@
+.stat-expression-editor {
+    --first-background: rgba(255, 255, 255, 0.05);
+    --second-background: rgba(0, 0, 0, 0.1);
+    --expression-padding: 6px 8px;
+}
+.hover-scope { box-sizing: border-box; }
+
+.stat-expression-editor .hover-scope { position: relative;}
+
+/*
+    without this dirty trick the border add up to the elements width.
+    Then each inner expression goes 1px down. The user can notice it.
+*/
+.stat-expression-editor .hover-scope::after {
+ content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  pointer-events: none; 
+} 
+
+.stat-expression-editor .hover-scope.hovered::after { border: 1px solid var(--accent-color); } 
+.stat-expression-editor .hover-scope.hovered > .append-stat-expression-menu { display: flex;}
+.stat-expression-editor .hover-scope.hovered > .remove-stat-expression-button { display: flex;}
+.stat-expression-editor .append-stat-expression-menu { display: none;}
+.stat-expression-editor .remove-stat-expression-button { display: none;}
+.stat-expression-editor__header {text-transform: uppercase;  color: var(--font-color-middle-priority); font-weight: 200; }
+.stat-expression-editor__add-button-header {  }
+.stat-expression-editor__expression { align-self: flex-start;}
+
+.stat-popup-button { position: relative; align-items: flex-start; }
+.stat-popup-button__header { font-weight: 600; padding: 4px 8px 2px 8px; white-space: nowrap; cursor: pointer;}
+.stat-popup-button__header:hover { background: var(--overlay-hovered);}
+.stat-popup-button__popup {padding: 16px; max-height: 400px;}
+.stat-popup-button__stat-not-found {color: red;}
+.stat-popup-button__select-stat { color: var(--accent-color);}
+
+.stat-function-expression { position: relative; align-items: flex-start;}
+.stat-function-expression__stat-popup-button{}
+.stat-function-expression__remove-button{ position: absolute; left: -10px; top: calc(50% - 10px);}
+.stat-function-expression__append-expression-menu { position: absolute; top: calc(50% - 10px); right: -10px; } 
+
+.scalar-stat-expression__append-expression-menu {
+    position: absolute;
+    display: none;
+    top: calc(50% - 10px);
+    right: -10px;
+}
+
+.stat-function-expression:hover .stat-function-expression__append-expression-menu {display: flex;}
+.stat-function-select-box {}
+.stat-function-select-box__header {
+    border: none;
+    color: var(--font-color-middle-priority);
+    font-weight: 200;
+    padding: 2px 8px;
+}
+
+
+.if-stat-expression {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     gap: 8px;
+}
+.if-stat-expression-operand {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 4px;
+     position: relative;
+     padding: 6px 4px;
+     border: 1px solid var(--border-color);
+     background: var(--second-background);
+}
+.if-stat-expression-operand__header {
+    position: absolute; 
+    top: -10px;
+    left: 10px;
+    text-transform: uppercase;
+    padding: 2px 4px;
+    background: var(--first-background);
+    border-radius: 2px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.range-stat-expression {
+     gap: 8px;
+     background: var(--first-background);
+     padding: var(--expression-padding);
+     border-radius: 4px;
+     align-items: flex-start;
+}
+
+.append-stat-expression-menu { border-radius: 20px;}
+
+.remove-stat-expression-button,
+.append-stat-expression-menu__header {
+    --font-color: black;
+    padding: 0;
+    background: white;
+    border-radius: 50px;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 12px;
+    z-index: 1000;
+}
+.append-stat-expression-menu__header .icon { transform: translate(0, 2px);}
+.remove-stat-expression-button:hover { background: white!important; border: 1px solid rgba(0, 0, 0, 0.5); }
+.append-stat-expression-menu__header:hover { background: white!important; border: 1px solid rgba(0, 0, 0, 0.5); }
+
+.scalar-stat-expression { position: relative;}
+.stat-expression-in-parentheses {
+    background: var(--second-background);
+    border-radius: 4px;
+    padding: var(--expression-padding);
+}
+
+
+.stat-expression-operator,
+.stat-range-button__input-mock {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+}
+
+.stat-expression-operator__operator {
+    transform: translate(0, -2px);
+    font-size: 16px; 
+    color: var(--font-weight-middle-priority);
+}
+
+.stat-expression-operator-toggle {
+    display: flex;
+    gap: 8px;
+}
+
+.stat-expression-operator-toggle__toggle-button {
+    padding: 0px;
+    text-transform: uppercase;
+    color: var(--font-color-low-priority);
+    font-weight: 200;
+}
+
+.binary-stat-expression {
+    gap: 8px; 
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 4px;
+}
+.binary-stat-expression.logical { flex-direction: column;}
+.binary-stat-expression.comparison {  background: var(--first-background); padding: var(--expression-padding); }
+.binary-stat-expression__logical-operator-toggle { padding: 4px 8px}
+.binary-stat-expression__remove-button.logical { position: absolute; left: -10px; top: calc(50% - 10px); }
+.binary-stat-expression__append-menu.logical { position: absolute; right: -10px; top: calc(50% - 10px); }
+.binary-stat-expression__remove-button.comparison { position: absolute; left: calc(50% - 10px); top: -10px; }
+.binary-stat-expression__append-menu.comparison { position: absolute; left: calc(50% - 10px); bottom: -10px;}
+.binary-stat-expression__remove-button.arithmetic { position: absolute; left: calc(50% - 10px); top: -10px; }
+.binary-stat-expression__append-menu.arithmetic { position: absolute; left: calc(50% - 10px); bottom: -10px;}
+
+.range-stat-expression { position: relative;}
+.range-stat-expression__remove-button { position: absolute; left: calc(50% - 10px); top: -10px; }
+.range-stat-expression__append-menu { position: absolute; left: calc(50% - 10px); bottom: -10px; }
+
+.stat-expression-operator-toggle__toggle-button.checked {font-weight: bold; color: var(--font-color);}
+
+.stat-expression-editor__search-stat-popup { max-height: 400px; padding: 16px;}
+.stat-expression-editor__stat-search-dialog {  }
+
+.stat-expression-operator-select-box__header { padding: 0; border: none;}
+.add-stat-formula-menu { border-radius: 100px;}
+.add-stat-formula-menu__header .icon { transform: translate(0, 2px);}
+.add-stat-formula-menu__header {
+    padding: 6px 12px;
+    border-radius: 40px;
+    border: 1px solid var(--border-color);
+}
+
+.add-stat-formula-menu__header:hover { }
+
+.textual-stat-expression { gap: 4px; }
+.textual-stat-expression__text-area { min-height: 250px; max-width: 600px;}
+.textual-stat-expression__error-message { color: red; align-self: flex-start;}
+.textual-stat-expression__status-icon-valid { color: green; align-self: flex-start;}

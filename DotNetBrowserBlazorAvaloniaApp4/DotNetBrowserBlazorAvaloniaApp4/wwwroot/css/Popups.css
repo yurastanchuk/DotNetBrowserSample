@@ -1,0 +1,23 @@
+.player-popup__vertial-tab-placement-header { justify-content: space-between; }
+.player-popup__header-tail { flex-grow: 1; justify-content: flex-end;}
+.player-popup-header { gap: 8px;}
+.single-stat-popup__stat-name {margin-left: 16px;}
+
+.preflop-stat-popup .preflop-stat-statistic__hand-report  { max-height: 500px; overflow-x: hidden; }
+.postflop-stat-popup .postflop-stat-statistic__hand-report  { max-height: 500px; overflow-x: hidden; }
+.hand-report-popup__hand-report { max-height: 500px;}
+.hand-report-popup__control-buttons {}
+
+.hud-note-icon-popup { min-height: 250px; gap: 8px;}
+.hud-note-icon-popup__note-dialog { padding: 0 16px; }
+.hud-note-icon-popup__color-marker-toggle { padding: 8px 16px 0 16px; }
+.hud-note-icon-popup__badge-dialog {  }
+.color-marker-toggle__toggle { padding: 4px; border-radius: 4px; }
+.color-marker-toggle__toggle.checked { background: rgba(var(--font-color-rgb), 0.2);}
+
+.hand-history-popup__hand-history {
+    height: auto;
+    overflow: auto;
+    min-height: 700px;
+    min-width: 600px;
+}

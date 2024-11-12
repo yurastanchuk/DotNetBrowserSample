@@ -1,0 +1,8 @@
+.switch-player-button {
+    border-radius: 4px;
+    background: var(--background-depth-1);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}

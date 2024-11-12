@@ -1,0 +1,67 @@
+﻿.color-selector__select-area {
+    border-radius: 6px;
+    box-shadow: var(--shadow-elevation-2);
+}
+
+.color-selector__result-block {
+    width: 60%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.color-selector__result-value {
+    width: 40%;
+    height: 18px;
+    font-size: 82%;
+    color: var(--font-color);
+}
+
+.color-selector__palette {
+    position: relative;
+    width: 200px;
+    height: 140px;
+    border-radius: 6px 6px 0 0;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), #000), linear-gradient(to right, #FFF, rgb(255, 255, 255, 0));
+}
+
+.color-selector__hue {
+    position: relative;
+    width: 200px;
+    height: 24px;
+    background: linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+.color-selector__alpha {
+    position: relative;
+    width: 200px;
+    height: 24px;
+    background: linear-gradient(to left, rgb(0, 0, 0) 0%, transparent 100%) 0% 0% no-repeat local, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpJREFUeNpi3LFjBwM2oK2tjVWciYFEMKqBGMCCK7yvXr06Gkr00wAQYACiEgXLqZw3aAAAAABJRU5ErkJggg==) 0 0/15px repeat local;
+    border-radius: 0 0 6px 6px;
+}
+
+.color-selector__pin {
+    position: absolute;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 14px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    box-shadow: var(--shadow-elevation-2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.color-selector__pin-hue { z-index: 2; }
+
+.color-selector__pin-alpha { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACpJREFUeNpi3LFjBwM2oK2tjVWciYFEMKqBGMCCK7yvXr06Gkr00wAQYACiEgXLqZw3aAAAAABJRU5ErkJggg==) 1px 1px/15px repeat local; }
+
+.color-selector__pin-alpha-color {
+    width: 22px;
+    height: 22px;
+    border-radius: 14px;
+    background: black;
+    transform: translate(-1px, -1px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}

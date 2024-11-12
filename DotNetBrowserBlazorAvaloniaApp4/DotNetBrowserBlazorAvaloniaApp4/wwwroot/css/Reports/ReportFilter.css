@@ -1,0 +1,108 @@
+﻿.report-filter__dialog {
+    background: var(--report-filter-background);
+    border-radius: 4px;
+    box-shadow: var(--shadow-elevation-3);
+    color: var(--font-color-middle-priority);
+}
+
+.report-filter__tabs-marker {
+    background: var(--dialog-accent-color);
+}
+
+.dialog-container {
+    overflow: hidden;
+}
+
+.report-filter__category-header {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+} 
+
+.report-filter__rooms-select-input {
+    align-items: stretch;
+}
+/*It's a dirty workaround specifically for Rooms option menut since the flex wrap option didn't work for some reason.*/
+    .report-filter__rooms-select-input .select-input__items-container {
+        max-height: 420px;
+        width: 600px;
+        flex-wrap: wrap;
+    }
+
+.report-filter__inner-tab-content {
+    background-color: var(--background-depth-3);
+    border-radius: 4px;
+}
+
+.report-filter__inner-tabs {
+    border-radius: 4px;
+/*    margin-left: calc(-2 * 12px);
+    margin-right: calc(-2 * 12px);
+    margin-bottom: calc(-2 * 8px);
+    */
+}
+
+.report-filter__dialog-commands-block {
+    background-color: var(--background-depth-3);
+}
+
+.report-filter__toggle-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.empty-report { display: flex; align-items: center; justify-content: center;  }
+
+ .custom-filter-button.windows::before {
+    content: '\E710';
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.custom-filter-button.macos::before {
+    content: '􀅼';
+    font-family: 'SF Pro';
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.custom-filter-button:hover {
+    color: var(--font-color);
+}
+
+.modal-host_modal-type_report-filter-modal { padding: 0;}
+.report-filter-modal { max-height: 100%;}
+.report-hand-filter { padding: 0; display: flex; flex-direction: column;}
+.report-hand-filter__tabs { padding: 16px 24px 8px 24px; flex-grow: 1; overflow: auto;  }
+.report-hand-filter__footer {
+     background: rgba(var(--font-color-rgb), 0.1);
+     padding: 8px 24px 16px 24px;
+}
+.report-hand-filter__tab-content { overflow: auto; }
+.report-hand-fiter__save-load-buttons { opacity: 0.6; }
+.report-filter-general__street-tabs {
+     background: var(--background-depth-3); 
+     border-radius: 4px;
+     padding: 0 16px;
+/*     margin-left: -24px; 
+     padding-left: 24px;
+     margin-right: -24px;
+     padding-right: 24px;
+     margin-bottom: -16px;
+     padding-bottom: 16px;*/
+}
+.report-filter-session__session-time-category-content {
+    display: grid; 
+    grid-template-columns: repeat(4, auto);
+}
+/*.report-filter-session__month-of-year-option,
+.report-filter-session__day-of-week-option,
+.report-filter-session__time-of-day-option {
+    display: grid; 
+    grid-column: 2 / span 3;
+    grid-template-columns: subgrid;
+}*/
+.report-hand-filter__custom-filter-text.non-default { font-weight: bold; color: var(--accent-color);}

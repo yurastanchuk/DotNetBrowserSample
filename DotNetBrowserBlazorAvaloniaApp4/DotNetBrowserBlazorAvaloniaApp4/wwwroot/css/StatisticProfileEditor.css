@@ -1,0 +1,112 @@
+.statistic-profile-editor { 
+    gap: 16px;
+}
+.statistic-profile-editor__collapsable-properties { background: white; padding: 8px 16px; min-width: 300px; width: 350px; }
+.statistic-profile-editor__properties { margin-right: -16px; padding-right: 16px; gap: 160px; }
+.statistic-profile-editor__tree { background: white; padding: 8px 0; position: relative;}
+.statistic-profile-editor__tree-header {padding-left:16px; padding-right: 4px;}
+.statistic-profile-editor__properties-header {}
+.statistic-profile-editor__dashboard { border-radius: 4px; flex-grow: 1; box-shadow: var(--shadow-elevation-three);}
+
+.statistic-profile-editor-toolbar { gap: 8px; --border-color: rgba(var(--font-color-rgb), 0.2);}
+.statistic-profile-editor-toolbar__tail { flex-grow: 1; justify-content: flex-end; gap: 16px;}
+.statistic-profile-editor-toolbar__preview-button {
+     background: rgba(255,255, 255, 0.2);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 4px;
+     padding: 4px 12px 4px 10px;
+}
+.statistic-profile-editor-toolbar__preview-button:hover { background: rgba(255,255, 255, 0.3); border: rgba(255, 255, 255, 0.4);}
+
+.selected-statistic-profile-editor-menu__header { padding: 8px 12px;}
+.add-new-table-button__table-size-dialog { padding: 16px;}
+
+.editor-statistic-tabs { background: var(--tab-background); }
+.editor-statistic-tabs__tab-item { color: var(--tab-background-contrast-color); opacity: 0.6; }
+.editor-statistic-tabs__tab-item:hover:not(.selected) { opacity: 1;}
+.editor-statistic-tabs__tab-item.selected {opacity: 1;}
+.editor-statistic-tabs__tab-item-panel {  }
+.editor-statistic-tabs__tab-item-panel-content { justify-content: space-between; flex-grow: 1; display: flex; }
+.editor-statistic-tabs__tab-items { display: flex; }
+.editor-statistic-tabs__page { flex-grow: 1;}
+.editor-statistic-tabs__selected-content { flex-grow: 1;}
+
+.editor-statistic-page {display: grid; justify-items: flex-start; align-items: flex-start; }
+.editor-statistic-page__item { border: 1px solid var(--border-color); border-radius: 4px; grid-column: 1; grid-row:1; position: relative;}
+.editor-statistic-page.dragover::after {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: var(--overlay-hovered);
+}
+
+.statistic-profile-properties { gap: 16px;}
+.editor-stat-table-cell-properties { gap: 16px;}
+.show-up-settings { gap: 16px; display: flex; flex-direction: column; }
+.stat-color-ranges { align-items: flex-start;}
+.hud-editor__properties-header { font-weight: bold;}
+.hand-container-editor { background: #323232; align-items: center; justify-content: center; }
+
+.border-rule-type-picker {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(8, 1fr);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-rule-type-picker__toggle {
+    border-left: 1px solid var(--border-color);
+    aspect-ratio: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.border-rule-type-picker__toggle:first-child { border: none;}
+.border-rule-type-picker__toggle.selected { background: var(--overlay-accented-focused);}
+
+.border-type-icon svg {
+    max-width: 24px;
+    max-height: 24px;
+    /*transform: scale(0.5);*/
+}
+
+.showup-settings-modal {
+    max-height: 780px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 480px;
+    gap: 8px;
+}
+.showup-settings-modal__settings { padding-right: 8px}
+.show-up-settings-marker {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 13px;
+    height: 13px;
+    z-index: 100;
+    border-radius: 2px;
+    background: var(--accent-color);
+}
+
+/*Placements*/
+.editor-statistic-tabs__tab-items.left-top { flex-direction: column;}
+.editor-statistic-tabs__tab-item-panel-content.left-top { flex-direction: column; align-items: center;}
+.editor-statistic-tabs__add-icon.left-top { align-self: center; }
+
+.show-up-settings-hit-filter__filter-name,
+.assigned-popup-editor-properties__popup-name,
+.show-up-settings__opportunity-stat-name,
+.stat-color-ranges__stat-name,
+.show-up-settings__room-name {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+

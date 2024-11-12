@@ -1,0 +1,8 @@
+﻿.sort-arrow {
+    color: var(--font-color);
+    font-size: 10px;
+}
+
+.sort-arrow.ascending {
+    transform: rotate(180deg);
+}

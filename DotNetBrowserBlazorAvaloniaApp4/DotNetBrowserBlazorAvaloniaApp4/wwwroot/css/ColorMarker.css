@@ -1,0 +1,7 @@
+.color-marker {
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+}
+
+.color-marker_style_squared { width: 24px; height: 24px; border-radius: 4px; }

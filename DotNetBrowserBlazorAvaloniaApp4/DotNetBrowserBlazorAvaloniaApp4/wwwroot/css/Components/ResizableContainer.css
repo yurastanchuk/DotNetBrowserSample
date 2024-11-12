@@ -1,0 +1,13 @@
+﻿.resizable-container__thumb-grid  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    pointer-events: none;
+}
+
+.window__resizable-container { }

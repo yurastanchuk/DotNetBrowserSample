@@ -1,0 +1,15 @@
+﻿.export-config-dialog {
+    min-width: 424px;
+    max-width: 740px;
+    min-height: 300px;
+}
+
+.export-config-dialog__footer-button {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.export-config-dialog__log-level_error, .export-config-dialog__log-level_fatal{ color: red; }
+.export-config-dialog__log-level_warning{ color: yellow; }
+
+.export-config-dialog__logs-container {background: var(--background-depth-3); }

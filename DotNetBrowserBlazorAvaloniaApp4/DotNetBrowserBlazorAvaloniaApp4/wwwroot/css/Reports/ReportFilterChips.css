@@ -1,0 +1,5 @@
+﻿.filter-button {
+    border: 1px solid var(--border-color);
+    border-radius: 32px;
+    padding: calc(6px / 2) 12px;
+}

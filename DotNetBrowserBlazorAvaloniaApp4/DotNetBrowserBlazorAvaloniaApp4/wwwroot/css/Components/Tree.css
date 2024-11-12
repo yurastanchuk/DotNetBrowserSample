@@ -1,0 +1,47 @@
+﻿.tree { display: flex; flex-direction: column;}
+.tree__item {padding: 8px 16px; height: 35px; flex-grow: 1;}/*We use height for virtualization accuracy https://docs.microsoft.com/ru-ru/aspnet/core/blazor/components/virtualization?view=aspnetcore-6.0#item-size*/
+.tree__item.selected { background: var(--overlay-selected); }
+.tree__item:hover { background: var(--overlay-hovered); }
+.tree__item.selected:hover { background: var(--overlay-selected); }
+.tree__item.cut { opacity: 0.4;}
+.tree__chevron-toggle { font-size: 11px; transform: translate(0, 0.5px); color: rgba(var(--font-color-rgb), 1);}
+.tree__grouping-item {}
+.tree__folder-name { font-weight: 600;}
+.tree__item-content { gap: 4px; flex-grow: 1;}
+.tree__separator {margin: 8px 16px;}
+    
+.tree__renaming-textbox {
+    border: 1px solid var(--accent-color);
+    background: var(--overlay-accented-focused);
+}
+
+.searchable-tree { gap: 16px; }
+.searchable-tree__search { padding-left: 14px; flex-grow: 1; }
+.searchable-tree__new-folder-button { margin: 0 4px 0 4px ; transform: translate(0, 2px); opacity: 0.3;}
+.searchable-tree__new-folder-button:hover {opacity: 1;}
+
+
+.modal-host_modal-type_search-tree-modal { padding: 16px 0;}
+.collapsable-tree { position: relative; z-index: 1000;}
+.collapsable-tree__header { padding-left: 16px; padding-top: 8px;}
+.collapsable-tree__thumb{ height: 100%; width: 4px;  position: absolute; right: -4px;  }
+
+.tree-more-button {
+    font-size: 12px;
+    color: rgba(var(--font-color-rgb), 0.5);
+    border: 1px solid rgba(var(--font-color-rgb), 0.2);
+    border-radius: 20px;
+    display: flex; align-items: center; 
+    height: 20px;
+    padding: 0px 4px;
+}
+.tree-more-button:hover { color: rgba(var(--font-color-rbg), 1); border-color: rgba(var(--font-color-rgb), 0.5); }
+.tree-more-button__header { transform: translate(0, -1px); white-space: nowrap; }
+.tree-item-content__more-button { transform: translate(0, 1px);}
+
+.stat-tree { gap: 8px; }
+
+/*Without this dragging the stat icon in the stat tree doesn't activate dragg& drop'*/
+.tree img { pointer-events: none;}
+
+

@@ -1,0 +1,133 @@
+﻿.welcome-view { align-items: center; gap: 16px; justify-content: center; }
+
+.welcome-view__or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 440px;
+}.welcome-view__or::before, .welcome-view__or::after {
+    content: '-';
+    color: transparent;
+    width: 190px;
+    height: 1px;
+    background-color: var(--font-color-low-priority);
+}
+
+.welcome-view__operation-progress { min-width: 400px;}
+
+.welcome-view__progress-bar {
+    width: 450px;
+}
+
+.robot-сontainer {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.welcome-robot {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.robot_crouching {
+    position: relative;
+    animation-name: robot_crouching;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+    @keyframes robot_crouching {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 30px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.robot_shadow {
+    position: relative;
+    top: -5px;
+    left: 105px;
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 70%;
+}
+
+.robot-friend {
+    --motion-path: "M 10 50 C 10 30, 50 30, 50 50 C 50 70, 10 70, 10 50";
+    max-height: 30%;
+    max-width: 35%;
+    position: relative;
+    offset-path: Path(var(--motion-path));
+    offset-rotate: 0deg;
+}
+    @keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+
+    30% {
+        offset-distance: 35%;
+    }
+
+    70% {
+        offset-distance: 65%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+.robot_face-friend {
+    left: 100px;
+    top: 50px;
+    animation: move 2.5s infinite linear;
+}
+
+.robot_left-friend {
+    left: 60px;
+    top: 150px;
+    animation: move 3s infinite linear;
+    animation-direction: reverse;
+}
+
+.robot_right-friend {
+    left: 420px;
+    top: 100px;
+    animation: move 3s infinite linear;
+}
+
+.robot-friends-container {
+    z-index: 1;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.friend-animation {
+    --animation-duration: 2s;
+    animation: robot-friend__container;
+    animation-timing-function: ease-in;
+    animation-duration: var(--animation-duration);
+}
+    @keyframes robot-friend__container {
+    0% {
+        top: -500px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+
+
+    

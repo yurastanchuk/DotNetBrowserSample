@@ -1,0 +1,101 @@
+﻿.hand-strength-filter__button {
+    min-height: 32px;
+    min-width: 0;
+}
+
+.hand-strength-filter__grouping-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.hand-strength-filter__button:hover { background: var(--overlay-hovered); }
+
+.hand-strength-filter__expression-container {
+    border: 1px solid var(--border-color);
+    min-height: 55px;
+    border-radius: 4px;
+    background: var(--default-background);
+    padding: 8px 16px;
+    width: 440px;
+}
+
+.hand-strength-filter__expression-container.empty {
+    border: 1px dotted var(--border-color);
+    background: var(--background-depth-1);
+    height: 55px;
+    width: 440px;
+}
+
+.hand-strength-filter__expression-container.selected {
+    background: var(--selected-expression-background);
+    border-color: var(--expression-accent-color);
+}
+
+.hand-strength-filter__expression.selected { background: #ecf6f9; }
+.hand-strength-filter__expression.inner {
+    padding: 8px 16px;
+    border: 1px solid var(--expression-accent-color);
+}
+
+.hand-strength-filter__expression-operator {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--expression-accent-color);
+    padding: 4px 0;
+}
+
+.hand-strength-filter__value-expression {
+    overflow-wrap: break-word;
+    height: fit-content;
+}
+
+.stats-editor__category-header { font-weight: 700; margin-top: 8px; }
+
+.hand-strength-hand-value{
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 12px;
+    grid-column-gap: 12px;
+    grid-template-areas:
+        "header header"
+        "air-header air-header"
+        "air-left air-right"
+        "pair-header pair-header"
+        "pair-left pair-right"
+        "draw-header draw-header"
+        "draw-left draw-right"
+        "nuts-header nuts-header"
+        "nuts-left nuts-right";
+}
+
+.hand-stregth-flop-board,
+.hand-stregth-turn-board,
+.hand-stregth-river-board {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0;
+    grid-column-gap: 12px;
+    grid-template-areas:
+        "header header"
+        "streetcard-header streetcard-header"
+        "streetcard streetcard"
+        "highcard-header highcard-header"
+        "highcard highcard"
+        "secondcard-header secondcard-header"
+        "secondcard secondcard"
+        "thirdcard-header thirdcard-header"
+        "thirdcard thirdcard"
+        "straightness-header straightness-header"
+        "straightness-left straightness-right"
+        "suitness-header suitness-header-right"
+        "suitness-left suitness-right"
+        "pairness-header pairness-header"
+        "pairness-left pairness-right";
+}
+
+.stats-editor__expression-header {
+    font-size: 18px;
+    font-weight: 500;
+}

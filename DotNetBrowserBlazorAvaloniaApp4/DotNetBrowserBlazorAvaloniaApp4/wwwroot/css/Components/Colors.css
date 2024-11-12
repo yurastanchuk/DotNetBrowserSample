@@ -1,0 +1,17 @@
+﻿:root {
+    --primary-color: #568859;
+    --background-color_level_1: #292929;
+    --report-background-color_level_1: #232926;
+    --report-background-color_level_2: #1C221E;
+    --report-background-color_level_3: #161A17;
+    --accent-color: yellow;
+    --accent-color-rgb: 255, 255, 0;
+    --dialog-accent-color: #5DB6BD;
+    --dialog-accent-color-rgb: 93, 182, 189;
+    --text-color: white;
+    --text-color-middle-priority: rgba(255,255,255, 0.6);
+}
+
+body {
+    background: transparent;
+}

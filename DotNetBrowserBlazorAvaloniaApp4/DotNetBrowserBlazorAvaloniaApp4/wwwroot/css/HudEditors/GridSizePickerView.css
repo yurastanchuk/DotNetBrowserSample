@@ -1,0 +1,12 @@
+﻿.grid-size-picker__grid-of-sizes {
+    display: grid;
+}
+
+.grid-size-picker__grid-item { padding: 1px; }
+
+.grid-size-picker__grid-item-background {
+    background: rgba(var(--font-color-rgb), 0.05);
+    width: 12px;
+    height: 12px;
+}
+.grid-size-picker__grid-item-background.selected { background: var(--accent-color); }

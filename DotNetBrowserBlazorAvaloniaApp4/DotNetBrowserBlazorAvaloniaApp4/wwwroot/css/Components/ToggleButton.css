@@ -1,0 +1,64 @@
+﻿.toggle-button {
+    /*This is dirty because toggle-button class doesn't define any border around the toggle button. 
+    So the padding may not be necessary if the toggle button is, for example, a transparent one.
+    Refactor this when face issues. Don't forget to fix positions dialog in ReportFilterView then
+    */
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {color: var(--font-color)}
+.toggle-button.checked {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.toggle-button__transparent, .toggle-button__style_transparent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.toggle-button__style_borderedrounded {
+    padding: 6px 12px;
+    border-radius: 40px;
+    border: 1px solid var(--border-color);
+    color: var(--font-color-middle-priority);
+    font-weight: var(--font-color-middle-priority);
+}
+
+
+/*
+    We need to enlarge clickable area of a simple toggle button in columns.
+    So, this is a bit dirty workaround to do that for columns with 1x spacing.
+*/
+.gap_1x> .toggle-button {
+    margin-top: 0;
+    padding-top: calc(8px / 2);
+    padding-bottom: calc(8px / 2);
+}
+
+.toggle-button-block {
+    --toggle-button-block__row-height: 32px;
+    display: grid;
+    background: var(--background-depth-1);
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.toggle-button-block__toggle-button {
+    border: 1px solid rgba(var(--font-color-rgb), 0.04);
+    border-radius: 0;
+    color: var(--font-color-middle-priority);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.toggle-button-block__toggle-button.checked {
+    color: var(--accent-color);
+    font-weight: 600;
+    background: var(--overlay-accented-selected);
+    border: 0px;
+}

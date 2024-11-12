@@ -1,0 +1,58 @@
+﻿.window {
+    height: 100%;
+    user-select: none;
+    /*Use color in window because if we use color in body then we need to set variables, i.e. theme, in html headers.*/
+    color: var(--font-color);
+}
+
+.window_sizetocontent {
+    display: flex;
+    align-items: flex-start;
+    justify-items: flex-start;
+    height: auto;
+}
+
+.window__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.window.windows { border-radius: var(--window-border-radius); }
+.window.macos { border-radius: 0; }
+.window__content{ height: 100%; overflow: hidden;} 
+.window__content.windows { border-radius: var(--window-border-radius); }
+.window__content.macos { border-radius: 0; }
+
+.window__content-container.windows {
+    border-radius: var(--window-border-radius);
+/*this is needed to substitute 'full-height' style when 
+    the height of the parent is restricted by max-height property 
+    rather than height. Look at BlazorWindow when SizeToContent == true
+*/
+    max-height: inherit;
+    /*For box shadow */
+    /*padding: 16px;*/
+}
+
+.window__content-container.macos {
+    border-radius: 0;
+    max-height: inherit;
+}
+
+.window__inner-content.windows {
+    overflow: hidden;
+    border-radius: var(--window-border-radius);
+    box-shadow: var(--shadow-elevation-three);
+    /*For box shadow */
+    margin: 16px;
+}
+
+.window__inner-content.macos {
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.thumb-grid {
+    
+}

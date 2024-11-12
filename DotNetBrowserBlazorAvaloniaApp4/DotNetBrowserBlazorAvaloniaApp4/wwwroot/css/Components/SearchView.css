@@ -1,0 +1,26 @@
+﻿.search-view__input-container {
+    background: var(--background-depth-1);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    padding: 6px 12px;
+}
+
+.searching {
+    border-color: black;
+}
+
+.search-input {
+
+}
+
+.search-input::placeholder {
+    opacity: 0.4;
+    color: var(--font-color);
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 14px;
+}
+    .search-input:focus::placeholder {
+        color: transparent;
+    }
+

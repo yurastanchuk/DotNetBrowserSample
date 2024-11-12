@@ -1,0 +1,150 @@
+﻿:root {
+    --gap: 8px;
+    --gap-2x: 16px;
+    --gap-3x: 24px;
+    --gap-4x: 32px;
+    --gap-5x: 40px;
+    --gap-6x: 48px;
+    
+    --horizontal-gap : 12px;
+}
+
+body { overflow: hidden; }
+
+button {cursor: initial;}
+
+.gap_sizeofspace {gap: 6px;}
+.gap_half {gap: calc(var(--gap) / 2);}
+.gap_1x { gap: var(--gap); }
+.gap_2x { gap: var(--gap-2x); }
+.gap_3x { gap: var(--gap-3x); }
+.gap_4x { gap: var(--gap-4x); }
+.gap_5x { gap: var(--gap-5x); }
+.gap_6x { gap: var(--gap-6x); }
+.nogap { gap: 0px; }
+
+.column.gap_1x { gap: calc(1 * var(--horizontal-gap))}
+.column.gap_2x { gap: calc(2 * var(--horizontal-gap))}
+.column.gap_3x { gap: calc(3 * var(--horizontal-gap))}
+.column.gap_4x { gap: calc(4 * var(--horizontal-gap))}
+
+.block { padding: var(--gap) 0; }
+.container { padding: 8px 24px;}
+.padding_0x-half {padding: 0px 4px;}
+.padding_0x-1x { padding: 0px 8px; }
+.padding_0x-3x { padding: 0px 24px; }
+.padding_0x-2x { padding: 0px 16px; }
+.padding_0x-3x {padding: 0px 24px;}
+.padding_half-0x {padding: 4px 0px;}
+.padding_half-half {padding: 4px 4px;}
+.padding_half-1x {padding: 4px 8px;}
+.padding_half-2x {padding: 4px 16px;}
+.padding_half-3x {padding: 4px 24px;}
+.padding_1x-0x { padding: 8px 0px; }
+.padding_1x { padding: 8px 8px; }
+.padding_1x-1x { padding: 8px 8px; }
+.padding_1x-3x { padding: 8px 24px; }
+.padding_1x-2x { padding: 8px 16px; }
+.padding_1x-oneandhalf { padding: 8px 12px; }
+.padding_oneandhalf-0x { padding: 12px 0px; }
+.padding_2x-0x {padding: 16px 0px;}
+.padding_2x-1x {padding: 16px 8px;}
+.padding_3x-half { padding: 24px 4px; }
+.padding_2x-3x { padding: 16px 24px;}
+.padding_2x-2x { padding: 16px 16px;}
+.padding_3x_2x {padding: 24px 16px;}
+.padding_3x-3x {padding: 24px 24px;}
+.padding_4x_2x { padding: 32px 16px;}
+.padding_1x-0x-0x-2x { padding: 8px 0px 0px 16px; }
+.padding_top_half { padding-top: 4px;}
+.padding_bottom_half { padding-bottom: 4px;}
+.padding_left_1x { padding-left: 8px;}
+.padding_left_2x { padding-left: 16px;}
+.padding_left_3x { padding-left: 24px;}
+
+.row { display: flex; }
+.row.right-aligned { justify-content: flex-end; }
+.row.left-aligned { justify-content: flex-start; }
+.row.top-aligned { align-items: flex-start; }
+.row.bottom-aligned { align-items: flex-end; }
+.row.reversed { flex-direction: row-reverse; }
+.row > .stretched { flex-grow: 1; /*overflow: hidden;*/ /*With overflow:hidden the shadow the tabs container in the stats editor wasn't visible'*/}
+.row.reverse { flex-direction: row-reverse;}
+.row.wrap {flex-flow:wrap}
+.row.content-centered {justify-content: center;}
+
+.column { display: flex; flex-direction: column; }
+.column.right-aligned { align-items: flex-end; }
+.column.left-aligned { align-items: flex-start; }
+.column.bottom-aligned { justify-content: flex-end; }
+.column.reversed { flex-direction: column-reverse; }
+.column > .stretched { flex-grow: 1; overflow-y: hidden; }
+.column.reverse { flex-direction: column-reverse; }
+.column > .align-self_left {align-self: flex-start;}
+.column > .align-self_right {align-self: flex-end;}
+.row > .align-self_top { align-self: flex-start;}
+.column.content-centered {justify-content: center;}
+
+.grid.left-aligned {justify-items: start;}
+.grid.right-aligned {justify-items: end;}
+.grid.centered { align-items: center; }
+
+.start-aligned { align-items: flex-start;}
+.centered { align-items: center; }
+.self-centered { align-self: center; }
+.space-between { justify-content: space-between; }
+.no-shrink { flex-shrink: 0; }
+.self-centered { align-self: center; }
+
+.centered-box { display: flex; align-items: center; justify-content: center; }
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+.sticky {position: sticky;top: 0;}
+.sticky-bottom { position: sticky; bottom: 0; }
+
+.hidden-overflow { overflow: hidden; }
+.scrollable { overflow: auto; }
+.scrollable-x { overflow-x: auto; }
+.scrollable-y { overflow-y: auto; overflow-x: hidden; }
+.column > .scrollable { overflow: auto; }
+.column > .scrollable-y { overflow-y: auto; }
+.column > .scrollable-x { overflow-x: auto; }
+.scrollable-block {overflow-y: auto; overflow-x: hidden; padding-right: 10px;}
+
+.wrap { flex-wrap: wrap; }
+.no-pointer-events { pointer-events: none; }
+.full-height { height: 100%; }
+.full-width { width: 100%; }
+.min-content {width: min-content;}
+.fit-content {width: fit-content;}
+.fill-container { min-width: -webkit-fill-available}
+.hidden { visibility: hidden; }
+
+.rounded {border-radius: 4px;}
+.rounded_2x {border-radius: 8px;}
+.container_primary { box-shadow: var(--shadow-elevation-three); border-radius: 4px; }
+
+/*
+    We often perceive centered text as if it is shifted to the bottom. 
+    So, use this class to position the text to its visual center
+*/
+.pixel-down { transform: translate(0,1px); }
+.pixel-down_2x { transform: translate(0,2px); }
+.pixel-down_3x { transform: translate(0,3px); } /* for segoe icon */
+.pixel-up { transform: translate(0,-1px); }
+.pixel-up_2x {transform: translate(0,-2px);}
+
+.elevation_lvl_one { box-shadow: var(--shadow-elevation-one); }
+.elevation_lvl_two { box-shadow: var(--shadow-elevation-two); }
+.elevation_lvl_three { box-shadow: var(--shadow-elevation-three); }
+
+.stretch-to-container-boundaries { margin-left: -24px; margin-right: -24px; }
+.stretch-to-right-container-boundary { margin-right: -24px; }
+.stretch-to-left-container-boundary { margin-left:-24px; }
+.stretch-to-left-container-boundary-half {margin-left: -12px;}
+
+/*to separete content from scroll*/
+.separate_from_scroll {
+    margin-right: 5px;
+}

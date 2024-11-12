@@ -1,0 +1,75 @@
+﻿.progress-circle {
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--font-color-middle-priority);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.operation-progress { gap: 8px;  }
+.operation-progress__progress-bar { min-width: 250px;}
+.operation-progress__description { color: var(--font-color-low-priority); font-weight: var(--font-weight-low-priority);}
+
+.progress-bar {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--background-accented);
+}
+
+.progress-bar__progress {
+    height: 100%;
+    background: var(--accent-color);    
+    transition-property: width;
+    transition-duration: 150ms;
+    transition-timing-function: ease-out;
+    border-radius: 2px;
+}
+
+@keyframes inderteminateProgresBarAnimation {
+    from {background-position: left}
+    to {background-position: 5000px 0}
+}
+
+.progress-bar-inderterminate {
+    height: 4px;
+    border-radius: 2px;
+    background-image: linear-gradient(45deg, 
+        var(--accent-color) 0%, 
+        var(--accent-color) 10%, 
+        var(--background-accented) 10%, 
+        var(--background-accented) 20%, 
+        var(--accent-color) 20%, 
+        var(--accent-color) 30%, 
+        var(--background-accented) 30%,
+        var(--background-accented) 40%,
+        var(--accent-color) 40%,
+        var(--accent-color) 50%,
+        var(--background-accented) 50%, 
+        var(--background-accented) 60%, 
+        var(--accent-color) 60%, 
+        var(--accent-color) 70%, 
+        var(--background-accented) 70%,
+        var(--background-accented) 80%,
+        var(--accent-color) 80%,
+        var(--accent-color) 90%,
+        var(--background-accented) 90%,
+        var(--background-accented) 100%
+    );
+    animation: inderteminateProgresBarAnimation 50s linear infinite;
+}
+
+.progress-circle_size_mini {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,100 @@
+.statistic-dashboard-tree { display: flex; background: #212121; border-radius: 4px; box-shadow: var(--shadow-elevation-two); }
+.statistic-dashboard-tree__add-button { padding-left: 12px; }
+.statistic-dashboard-tree__navigation-panel {
+     position: relative;
+     width: var(--tree-width);
+     min-width: 280px;
+     max-width: 1000px;
+}
+.statistic-dashboard-tree__navigation-panel:after {
+    content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; pointer-events: none;
+    border-right: 1px solid var(--border-color);
+}
+.statistic-dashboard-tree__resize-tree-thumb { height: 100%; width: 4px;  position: absolute; right: 0px; }
+
+.statistic-dashboard-tree__header { padding: 8px 4px 8px 8px;}
+.statististic-dashboard {
+    display: flex;
+    flex-grow: 1;
+    overflow-x: auto;
+    border-radius: 4px; 
+}
+.statistic-dashboard__player-dialog { flex-grow: 1;}
+.statistic-dashboard__header { padding: 8px 16px; align-self: stretch; }
+.statistic-dashboard__pages { display: flex; flex-grow: 1; flex-shrink: 0; }
+.statistic-dashboard__page {
+    /*setting align-items: flex-start casuses flickering of the hands page*/
+    /*align-items: flex-start;*/
+
+     /*without this it shows a false scroll bar*/
+     overflow-x: hidden;
+}
+
+.statistic-dashboard-page_type_hand-report-statistic-dashboard-page {
+    /* 
+        without min-width the scroll resets when the user navigates on the previous pag
+        see https://github.com/hand2note/Hand2Note4.1.Issues/issues/288
+    */
+    min-width: 800px;
+}
+.statistic-dashboard__page:last-child {
+    flex-grow: 1;
+}
+.statistic-dashboard__page:last-child .statistic-dashboard__secondary-page{ border-right: 1px solid var(--border-color); }
+.statistic-dashboard__page_type_stat-statistic-dashboard-page { align-items: stretch; }
+.statistic-dashboard-page_type_statistic-profile-dashboard-page { align-items: flex-start; }
+.statistic-dashboard-page_type_preflop-heat-map-dashboard-page { align-items: flex-start;}
+.statistic-dashboard__secondary-page {
+    position: relative;
+    /*
+        Without full height the shadow in the assigned popup page doesn't stretch.
+        If you need to remove height: 100% here then you should find another fix for this bug.
+    */
+    height: 100%;
+}
+.statistic-dashboard__secondary-page::after {
+    content:"";
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,20,0.15) 0%, rgba(0,0,0,0) 100%);
+    z-index: 3;
+}
+.statistic-dashboard__build-progress {
+     flex-grow: 1; 
+     align-self: center; 
+     justify-self: center;
+     margin-top: 120px;
+}
+
+.statistic-dashboard-page_type_stat-statistic-dashboard-page {}
+.statistic-dashboard-page__preflop-heat-map {padding: 8px 16px;}
+.statistic-dashboard-page_type_hand-plot-statistic-dashboard-page { flex-grow: 1;}
+.statistic-dashboard-page_type_hand-report-statistic-dashboard-page {}
+.statistic-dashboard-page__hand-plot {
+    flex-grow: 1;
+}
+.statistic-dashboard__page_last { flex-grow: 1;}
+
+.statistic-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.statistic-dashboard-header__date-filter-popup-button-header { padding: 8px 12px;}
+.statistic-dashboard-header__switch-player-button {padding: 8px 12px;}
+.statistic-dashboard-header__hands {transform: translate(0, -2px); color: var(--font-color-middle-priority)}
+
+.statistic-dashboard-profile-menu__header { padding: 0;}
+.statistic-dashboard-profile-menu__dropdown-box { padding: 8px 12px;}
+
+.statistic-dashboard-page-header { padding: 8px 16px; align-self: stretch; }
+.statistic-dashboard-page-header__title {
+    padding: 8px 16px;
+    background: rgb(100, 100, 100);
+    color: white;
+    border-radius: 40px;
+}
+

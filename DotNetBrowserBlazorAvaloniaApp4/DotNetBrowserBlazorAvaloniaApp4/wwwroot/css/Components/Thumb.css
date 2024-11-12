@@ -1,0 +1,19 @@
+﻿.thumb { z-index: 100; pointer-events: all; }
+
+.thumb_TopLeft {cursor: nwse-resize; width: 6px; height: 6px; }
+.thumb_TopRight {cursor: nesw-resize; width: 6px; height: 6px; }
+.thumb_BottomLeft {cursor: nesw-resize; width: 6px; height: 6px; }
+.thumb_BottomRight {cursor: nwse-resize; width: 12px; height: 12px; }
+
+.thumb_Top {cursor: ns-resize; height: 4px; }
+.thumb_Bottom {cursor: ns-resize; height: 6px; }
+.thumb_Left {cursor: ew-resize; width:  4px; }
+.thumb_Right {cursor: ew-resize; width:  6px; }
+
+.isBeingResized .hideOnResize {
+    visibility: hidden;
+}
+
+.thumb.disabled {
+    cursor: default
+}

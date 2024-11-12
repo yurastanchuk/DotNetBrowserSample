@@ -1,0 +1,123 @@
+﻿.stats-table-size-picker {
+    --grid-cell-hover-color: #0BA3D7;
+
+    background: #FFFFFF;
+    color: #707070;
+}
+
+.stats-table-size-picker__header {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.size-picker-button {
+    text-transform: uppercase;
+    color: #5DB6BD;
+    padding: 6px 24px;
+    font-weight: 700;
+}
+
+.size-picker-button:hover {
+    background-color: rgba(93, 182, 189, 0.08);
+}
+
+.size-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(16, 15px);
+    margin: 1px;
+}
+
+.size-picker-grid > div {
+    background-color: #707070;
+    border: 1px solid #FFFFFF;
+}
+
+.size-picker-grid > div:hover {
+    background-color: var(--grid-cell-hover-color);
+}
+
+
+/* the block below looks weird, but it seems it's the only quite fast way to make the highlighting of grid cells on hover */
+
+.size-picker-column-1:hover ~ [column-id$="xxxxxxxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-2:hover ~ [column-id$="xxxxxxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-3:hover ~ [column-id$="xxxxxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-4:hover ~ [column-id$="xxxxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-5:hover ~ [column-id$="xxxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-6:hover ~ [column-id$="xxxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-7:hover ~ [column-id$="xxxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-8:hover ~ [column-id$="xxxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-9:hover ~ [column-id$="xxxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-10:hover ~ [column-id$="xxxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-11:hover ~ [column-id$="xxxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-12:hover ~ [column-id$="xxxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-13:hover ~ [column-id$="xxxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-14:hover ~ [column-id$="xxxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-15:hover ~ [column-id$="xxxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-16:hover ~ [column-id$="xxxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-17:hover ~ [column-id$="xxxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-18:hover ~ [column-id$="xxx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-19:hover ~ [column-id$="xx"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+.size-picker-column-20:hover ~ [column-id$="x"] {
+    background-color: var(--grid-cell-hover-color);
+}
+
+/* end of the weird constructions */

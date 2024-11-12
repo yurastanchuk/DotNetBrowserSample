@@ -1,0 +1,27 @@
+﻿.radio-button__input {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    background: var(--background-depth-2);
+}
+
+.radio-button__input:not(.selected):hover { border: 1px solid var(--font-color);}
+
+.radio-button__input.default, .radio-button__input.nondefault { border-color: var(--font-color-middle-priority); }
+.radio-button__input.nondefault.selected { border-color: var(--accent-color); }
+.radio-button__selection-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--font-color);
+}
+.radio-button__selection-marker.default{ background: var(--font-color-low-priority); }
+
+.radio-button__selection-marker.nondefault {
+    background: var(--accent-color);
+}
+

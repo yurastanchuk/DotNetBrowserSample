@@ -1,0 +1,6 @@
+.no-hands-anchor,
+.no-statistic-anchor{
+    font-size: 22px;
+    color: var(--font-color-middle-priority);
+    white-space: nowrap;
+}

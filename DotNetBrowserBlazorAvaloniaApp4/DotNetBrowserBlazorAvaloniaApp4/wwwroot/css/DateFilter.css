@@ -1,0 +1,21 @@
+.date-filter-popup-button > [popup] {}
+.date-filter-popup-button__date-filter-dialog {padding: 24px 32px;}
+.date-filter-dialog {gap: 16px; }
+.date-filter-dialog__dialog-buttons { gap: 16px; align-self: flex-end; }
+
+.date-filter { gap: 16px;}
+.date-filter__option-title {
+    font-size: var(--header-two-font-size);
+    font-weight: var(--header-two-font-weight);
+    margin-bottom: var(--header-two-margin-bottom);
+}
+.date-filter__date-period { gap: 16px; align-items: flex-end;}
+.date-fitler__or-text{
+     margin-bottom: 4px;
+}
+.disrete-time-span { gap: 4px;}
+.date-filter-popup-button__header_non-default {
+    color: var(--accent-color);
+    background: var(--overlay-accented-selected);
+    font-weight: 600;
+}

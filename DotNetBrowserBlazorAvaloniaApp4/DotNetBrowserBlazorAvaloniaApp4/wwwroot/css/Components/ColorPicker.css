@@ -1,0 +1,31 @@
+﻿.color-picker { }
+.color-picker__header { padding: 4px 6px; }
+.color-picker__popup { padding: 16px;}
+.color-picker__selected-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+}
+
+.color-picker__recent-colors { gap: 8px; }
+.color-picker__standard-colors { gap: 8px; }
+
+.color-picker__standard-colors {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(auto, auto));
+    grid-template-rows: repeat(4, minmax(auto, auto));
+    column-gap: 7px;
+    row-gap: 7px;
+}
+
+.color-button {
+    width: 20px;
+    height: 20px;
+    color: inherit;
+    /*box-shadow: var(--shadow-elevation-1);*/
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+}
+.color-button:hover { box-shadow: var(--shadow-elevation-one); }

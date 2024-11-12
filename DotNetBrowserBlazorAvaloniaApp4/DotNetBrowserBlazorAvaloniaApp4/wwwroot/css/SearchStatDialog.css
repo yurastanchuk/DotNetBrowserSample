@@ -1,0 +1,19 @@
+.stat-expression-editor__search-stat-popup {
+    /*display: flex;*/
+}
+.search-stat-dialog {
+    /*max-height: min(90%, 700px);*/
+}
+.search-stat-dialog__search-view {
+    
+}
+
+.search-stat-dialog__stat-item {
+    display: flex; 
+    justify-content: flex-start;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.search-stat-dialog__stat-item:hover {
+    background: var(--overlay-hovered);
+}

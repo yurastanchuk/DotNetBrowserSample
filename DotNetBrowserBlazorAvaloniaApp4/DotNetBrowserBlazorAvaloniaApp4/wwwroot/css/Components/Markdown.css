@@ -1,0 +1,12 @@
+﻿.markdown {
+    line-height: 20px;
+}
+
+    .markdown li {
+        margin-left: 12px;
+    }
+
+
+.markdown li:before {
+    content: "- ";
+}

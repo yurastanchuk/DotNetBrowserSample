@@ -1,0 +1,80 @@
+.note-dialog {
+   gap:16px; 
+}
+.note-dialog__notes { gap:4px; }
+
+.note-list {
+    display: flex;
+    flex-direction: column;
+    gap:4px; 
+    /*With 'align-item: flex-start' the notes in the hud note icon popup look wrong*/
+    /*align-items: flex-start;*/
+}
+
+.note {
+    border: 1px solid var(--border-color);
+    --background-color: #292929;
+    border-radius: 4px;
+    background: var(--background-color);
+    color: var(--font-color);
+    min-height: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.note:hover {background: var(--overlay-hovered);}
+.note:focus-within {
+    border: 1px solid var(--border-color);
+    border-color: var(--font-color);
+    caret-color: var(--font-color);
+    background: rgba(255,255,255,0.04);
+}
+.note__content { }
+.note__date {padding-right: 8px; white-space: nowrap;}
+.note__note-input {
+    padding: 6px 12px;
+    color: white;
+    resize: none;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    word-break: break-word;
+    white-space: pre-wrap;
+    width: 420px;
+}
+
+.hand-note-chunk{ padding: 6px; border-radius: 4px; }
+.hand-note-chunk.selected {background: var(--overlay-selected);}
+
+.note-template-dialog {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    align-items: flex-start;
+}
+.note-template-dialog__templates {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 450px;
+    align-items: flex-start;
+}
+
+.note-template {
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    background: #212121;
+}
+.note-template:hover { background: #262626; border-color: white;}
+.note-template__content {display: block;}
+
+.add-note-dialog { gap:8px; }
+.add-note-dialog__player-select-box {}
+.popup-window__add-note-dialog { padding: 8px 16px; background: #212121; }
+.hand { align-items: center; gap:8px;  }
+
+.manual-badge-dialog {}
+.manual-badge__header { height: 28px; width: 28px; display: flex; align-items: center; justify-content: center;}
+

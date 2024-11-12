@@ -1,0 +1,12 @@
+﻿.auto-import-config-view__folder-path {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 440px;
+}
+
+.auto-import-config-view__options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-2x);
+}

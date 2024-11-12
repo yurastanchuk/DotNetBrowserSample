@@ -1,0 +1,62 @@
+﻿.winnings-graph {
+    position: relative;
+}
+
+.horizontal-indicators {
+    position: relative;
+}
+
+.key-indicator {
+    font-weight: 500;
+}
+
+.graph-legend {
+    min-width: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.graph-legend_text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.graph-marker {
+    min-width: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.highlighted-point {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background-color: var(--background-color_level_1);
+    pointer-events: none;
+}
+
+.highlighted-point_transparent {
+    opacity: 0.75;
+}
+
+.overlay-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.graph-canvas {
+    position: relative;
+}
+
+.winnings-graph__max-winnings-point {
+    background: #5A7C3D;
+    padding: 4px 6px;
+    color: #E1FDCC;
+    border-radius: 4px;
+}

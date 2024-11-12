@@ -1,0 +1,14 @@
+.report-hand-plot {
+    background: #232926;
+}
+
+.report-hand-plot__header {
+     padding: 8px 8px 8px 24px;
+     align-items: flex-start;
+}
+
+.report-hand-plot__control-buttons {
+    gap: 8px;
+    padding: 8px 24px;
+    align-self: flex-end;
+}

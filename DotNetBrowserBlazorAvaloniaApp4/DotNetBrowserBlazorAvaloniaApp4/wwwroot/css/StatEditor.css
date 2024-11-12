@@ -1,0 +1,213 @@
+body { --expression-accent-color: var(--accent-color); }
+
+.stat-editor { gap: 16px; --expression-accent-color: #0B98B9; }
+
+.stat-editor-tool-bar {
+     --border-color: rgba(var(--font-color-rgb), 0.2);
+     --overlay-hovered: rgba(var(--font-color-rgb), 0.2);
+}
+.stat-editor-tool-bar .separator {margin-left: 8px; margin-right: 8px;}
+.stat-editor-tool-bar__tail { flex-grow: 1; justify-content: flex-end; gap: 16px;}
+.stat-editor-tool-bar__test-button {
+     background: rgba(255,255, 255, 0.2);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 4px;
+     padding: 4px 12px 4px 10px;
+}
+
+.selected-stat-editor-menu__header { padding: 8px 12px;}
+
+.stat-editor__dashboard { background: var(--default-background); border-radius: 4px; box-shadow: var(--shadow-elevation-two);  }
+.stat-editor__stat-tree {
+     background: var(--default-background);
+     flex-shrink: 0;
+     /*Without this there is an excessive horizontal scroll bar at the bottom*/
+     overflow-x: hidden;
+}
+.stat-editor__stat-tree .collapse-button { margin-right: 8px;}
+.stat-editor__working-area {
+    padding: 0px 16px 16px 0px;
+    position: relative;
+    display: block;
+    background: #E8E8E8;
+}
+
+.user-stat-editor { flex-direction: column; overflow-x: hidden}
+.user-stat-editor__selected-tab-content { }
+
+.hand-action-filter-editor {  }
+.hand-action-filter-editor__actions { gap: 40px; padding: 24px; flex-grow: 1; align-items: flex-start; flex-shrink: 0; }
+.hand-action-filter-editor__button-grid { display: grid; grid-template-columns: repeat(5, auto); gap: 8px;}
+.hand-action-filter-button, .hand-strength-filter-editor__expression-button {
+     background: var(--default-background);
+     color: var(--font-color);
+     text-transform: none;
+     padding: 8px 12px;
+}
+
+.hand-action-filter-button:hover, .hand-strength-filter-editor__expression-button:hover { box-shadow: var(--hover-shadow);  }
+.hand-action-filter-editor__streets  {
+    gap: 16px;
+    flex-direction: row;
+    align-self: stretch; 
+    /*With 'flex-shrink: 0' vertical scroll doesn't work in actions tab'*/
+    /*flex-shrink: 0;*/ 
+
+    /*overrides 'overflow: auto' in the style. Otherwise, hand2note shows false horizontal scroll in the actions tab*/
+    overflow-x: hidden!important; 
+}
+.hand-action-filter-editor__properties { flex-shrink: 0;}
+.hand-street-filter { gap: 8px; max-height: 2000px; }
+.hand-street-filter__title {font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);  }
+.hand-street-filter__action-row {
+    background-color: #005A6E;
+    border-radius: 4px;
+    min-width: 140px;
+    min-height: 100px;
+    box-shadow: var(--shadow-elevation-one);
+    padding-bottom: 16px;
+    flex-shrink: 0;
+}
+.hand-street-filter__action-row-toolbar { color: var(--font-color-low-priority); padding: 6px 6px; }
+.hand-street-filter__action-player-id { color: var(--accent-color); font-weight: bold; }
+
+.hand-street-filter__action { padding: 8px 16px; cursor: pointer; gap: 4px;}
+.hand-street-filter__action.selected { background: var(--overlay-focused);}
+.hand-street-filter__action:hover:not(.selected) { background: var(--overlay-hovered); }
+.hand-street-filter__remove-action-button { display: none; width: 16px; height: 16px;}
+.hand-street-filter__action:hover .hand-street-filter__remove-action-button { display: flex; }
+.hand-filter-empty-action-row {
+    background-color: transparent;
+    border: 1px dashed #000000;
+    box-shadow: none;
+    border-radius: 4px;
+    min-width: 140px;
+    min-height: 100px;
+}
+.hand-filter-empty-action-row.selected { background: rgba(11, 152, 185, 0.1); border:1px solid rgb(11, 152, 185); }
+
+.hand-filter-empty-action-row:hover { border-color: rgba(--font-color-rgb, 0.5);}
+.hand-strength-preflop__hand-details-panel,
+.hand-action-filter-options {
+    --font-color: rgba(var(--font-color-rgb), 1);
+    --background-depth-1: white;
+    --background-depth-2: white;
+    --border-color: rgba(0,0,0, 0.2);
+    --overlay-accented-selected: #C0DDC6;
+    --accent-color:#3AA650;
+    gap: 8px;
+    background: rgba(var(--font-color-rgb), 0.1);
+    padding: 24px;
+}
+.hand-action-filter-options .checkbox { margin: 2px 0; width: fit-content;}
+.hand-action-filter-options__header { font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);   }
+.hand-action-filter-options__header-action { font-weight: bold; }
+.hand-action-filter-options__header-street { font-weight: bold; }
+
+
+.hand-strength-filter-editor { gap: 16px; }
+.hand-strength-filter-editor > * { flex-shrink: 0; }
+.hand-strength-filter-editor__expression {
+    background: var(--default-background);
+    padding: 8px 16px;
+    border-radius:4px;
+    min-height: 60px;
+    align-items: flex-start;
+    --expression-accent-color: #0B98B9;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.hand-strength-filter-editor__expression-dialog { padding: 16px; gap: 8px; display: flex; flex-direction: column; max-width: 40%; min-width: min-content}
+.hand-strength-filter-editor__expression-buttons-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;}
+.hand-strength-filter-editor__expression-button { border-radius: 4px; padding: 6px 12px; }
+.hand-strength-filter-editor__expression-close-button { align-self: flex-end;  }
+.hand-strength-filter-editor__options { flex-grow: 1; display: grid; grid-template-columns: 1fr 1fr; background: rgba(var(--font-color-rgb), 0.1)}
+.hand-strength-filter-editor__options .check-box__header {max-width: 120px; white-space: normal;}
+.hand-strength-filter-editor__options > div {padding: 24px;}
+.hand-strength-filter-editor__options .gap_2x { gap: 8px;} /*todo: refactor the view*/
+.hand-strength-filter-editor__options > div:first-child { border-right: 1px solid var(--border-color);}
+.hand-strength-filter-editor__empty-expression { height: 100px; background: rgba(var(--font-color-rgb), 0.1); border-radius: 4px; border: 1px solid var(--border-color);}
+.hand-strength-filter-editor__empty-expression.selected {  background: rgba(11, 152, 185, 0.1); border: 1px solid rgba(11, 152, 185);  }
+.hand-strength-filter-editor__header {  font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);   }
+.hand-strength-filter-editor__preflop-range-dialog { align-self: flex-start;}
+
+.hand-strength-filter-editor__expression.selected { border: 1px solid rgba(11, 152, 185); position: relative;}
+.hand-strength-filter-editor__expression.selected:after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: rgba(11, 152, 185, 0.06);
+    pointer-events: none;
+}
+.hand-filter-general { padding: 24px 24px;}
+.hand-filter-general__options { align-items: flex-start;}
+
+.user-stat-editor__stat-expression-editor { padding: 24px; }
+
+.user-stat-editor__bet-sizing-category-editor { padding: 24px; }
+.user-stat-editor__bet-sizing-table { background: white;}
+.bet-sizing-category-editor { gap: 16px; align-items: flex-start; }
+.bet-sizing-category-editor__table { border: 1px solid var(--border-color); border-radius: 4px; }
+.bet-sizing-category-editor__table td { padding: 8px 12px; border-top: 1px solid var(--border-color)}
+.bet-sizing-category-editor__table th{ padding: 8px 12px; color: var(--font-color-low-priority); text-align: left; }
+
+.badge-editor {
+     gap: 16px;
+     padding: 24px;
+}
+.badge-editor__header { font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);  }
+.badge-editor__options { align-self: flex-start; gap: 16px;}
+.badge-editor__border-rule-options { max-width: 320px; }
+.badge-editor__stat-expression-header { text-transform: none; font-weight: bold;}
+.badge-preview {
+    color: white;
+    border-radius: 4px;
+    background: #323232;
+    padding: 24px;
+    min-width: 40px;
+    min-height: 40px;
+    align-self: flex-start;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.stat-editor-test-dialog { min-width: 600px; gap: 8px; }
+.stat-editor-test-dialog__progress-circle {height: 20px; width: 20px;}
+.stat-editor-test-dialog__hands { gap: 8px;}
+
+.modal-host_modal-type_hand-filter-editor-modal {padding: 0;}
+.hand-filter-editor-modal { gap: 16px;}
+.hand-filter-editor-modal__name-option { padding: 24px 24px 0 24px; align-self: flex-start; justify-content: flex-start;}
+.hand-filter-editor-modal__dialog-buttons {
+    padding: 8px 24px; 
+    background: rgba(var(--font-color-rgb), 0.1);
+    justify-content: flex-end;
+}
+.hand-filter-editor-modal .hand-strength-filter-editor__options { background: transparent;}
+.modal-host_modal-type_hand-filter-editor-modal { background: #E8E8E8; }
+.mapped-system-stat-editor input, 
+.mapped-system-stat-editor .checkbox, 
+.mapped-system-stat-editor .select-box, 
+.mapped-system-stat-editor .toggle-button,
+.mapped-system-stat-editor button:not(.tab-item),
+/*For Expression tab Add Stat Formula menu button*/
+.mapped-system-stat-editor .menu__header {
+     pointer-events: none; opacity: 0.3;
+}
+
+.mapped-system-stat-editor .collapse-button { opacity: 1!important; pointer-events: all!important; }
+
+.mapped-system-stat-editor .stat-expression-editor .select-box { opacity: 0.6; }
+.mapped-system-stat-editor .select-box button { opacity: 1; }
+/*Reduce opactity for stat expression because it's hardly visible'*/
+.mapped-system-stat-editor .stat-expression-editor button { opacity: 0.6; }
+.stat-editor__lock-bar {}
+
+.embedded-system-stat-editor { height: 100%; align-items: center; }
+.embedded-system-stat-editor__lock-bar { align-self: stretch; margin-right: -16px; border-radius: 0 4px 0 0;}
+.embedded-system-stat-editor__lock-anchor { flex-grow: 1; justify-content: center;}

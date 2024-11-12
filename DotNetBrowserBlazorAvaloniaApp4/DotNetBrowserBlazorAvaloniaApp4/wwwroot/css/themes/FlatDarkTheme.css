@@ -1,0 +1,12 @@
+﻿:root {
+    --primary-color: #323232;
+    --primary-background-color: #323232;
+    --background-color_level_1: #323232;
+    --background-color_level_2: #323232;
+    --background-color_level_3: #323232;
+    --accent-color: yellow;
+}
+
+.container_primary {
+    box-shadow: none;
+}

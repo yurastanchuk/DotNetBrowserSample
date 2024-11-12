@@ -60,7 +60,7 @@ namespace DotNetBrowserBlazorAvaloniaApp4.Browser {
             // Create and initialize the IEngine instance.
             EngineOptions engineOptions = new EngineOptions.Builder {
                 RenderingMode = RenderingMode.HardwareAccelerated,
-                LicenseKey = "",
+                LicenseKey = "4UO6XHLJSNH2ZG9M906RLJ0XJMBQT7OWV0RU4QTUFOZQGT89KSJX4EEPNGTK5ROOGBSVT0BJ26P36ZSGM31UDNN0BR32GMD2G7AWSRODT4B4GPNG8KQ5BLEG798SYVS0UU7O03H2CO20ON8CWH7",
                 Schemes = {
                     {
                         Scheme.Https,

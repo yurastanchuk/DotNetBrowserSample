@@ -1,0 +1,13 @@
+﻿.window-control-buttons {
+    justify-self: flex-end;
+}
+
+.window-control-button {
+    font-size: 12px;
+    padding: 0 16px;
+  }
+
+.window-control-button.close:hover {
+    background: #B50000;
+    color: white;
+}

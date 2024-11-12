@@ -1,0 +1,65 @@
+.segoe-icon-button {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    font-family: "Segoe MDL2 Assets";
+    cursor: default;
+    text-align: center;
+}
+    .segoe-icon-button:hover:not(.no-hover) {
+        background: var(--overlay-hovered);
+    }
+    .segoe-icon-button:hover:disabled {
+        background: transparent;
+    }
+
+.sfpro-icon-button {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    font-family: "SF Pro";
+    cursor: default;
+    text-align: center;
+}
+    .sfpro-icon-button:hover:not(.no-hover) {
+        background: var(--overlay-hovered);
+    }
+    .sfpro-icon-button:hover:disabled {
+        background: transparent;
+    }    
+
+.icon-button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.icon-button.disabled { opacity: 0.3; pointer-events: none;}
+
+.svg-icon path { fill: var(--font-color); }
+.icon_size_micro { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;}
+
+.icon-button_size_mini { height: 32px; width: 32px;font-size: 11px;}
+.icon-button_size_micro { height: 20px; width: 20px;font-size: 10px; border-radius:2px; }
+
+.icon-button:hover:not(.no-hover) {
+    background: var(--overlay-hovered);
+}
+
+.hand2note-logo_size_mini { width: 32px; height: 32px;}
+.arrow-up-button { transform: rotate(90deg);}
+.arrow-down-button { transform: rotate(-90deg);}
+
+.locked-anchor { gap: 8px;}
+.locked-anchor__icon {font-size: 48px; opacity: 0.25; }
+
+.room-icon {
+    width: 24px; 
+    height: 24px;
+    border: 2px solid #3E4440;
+}

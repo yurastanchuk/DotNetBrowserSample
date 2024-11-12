@@ -1,0 +1,92 @@
+﻿.hand-report__cell {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    padding-right: 6px;
+    height: 38px;
+}
+
+.hand-report-header-cell__container-container {
+    overflow: hidden;
+    padding: 6px 0;
+    /*padding-left: 8px;*/
+    position: sticky;
+    top: 0;
+}
+
+.hand-report-header-cell__container {
+    width: min-content;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    color:var(--font-color-low-priority);
+}
+
+.hand-report-header-cell__container-text {
+    /*padding-left: 6px;*/
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+.hand-report-header-cell__collapse-action-button { color: var(--font-color-middle-priority); transform: translate(0, 2px);}
+.hand-report-header-cell__collapse-action-button svg{ filter: invert(0.5);}
+.hand-report-header-cell_column_date-played .data-grid-header-cell__thumb-container {
+    margin-left: 8px;
+}
+
+/*Not sure for now what will be the indend from the left*/
+.hands-report__separator { pointer-events: none; margin-left: calc(2* 12px); }
+
+@keyframes fadeIn {
+    0% { opacity: 0; pointer-events: none; }
+    100% { opacity: 1; pointer-events: all; }
+}
+
+.hand-report__HandValueCategory { max-width: 72px; white-space: normal; padding-left: 16px; }
+.hand-report__PocketCards-header { max-width: 36px; }
+.hand-report__FlopPot-header { max-width: 25px; }
+.hand-report__TurnPot-header { max-width: 25px; }
+.hand-report__RiverPot-header { max-width: 25px; }
+
+.hand-report__TurnCards-header { max-width: 25px; }
+.hand-report__RiverCards-header { max-width: 25px; }
+
+.hand-report__HandValueCategory-header {
+    padding-left: 8px;
+}
+
+.hand-report__first-header-cell-container { padding-left: 24px; }
+.hand-report__last-header-cell-container { padding-right: 0px; }
+.hand-report__cell-first { padding-left: 24px; }
+.hand-report__cell-last { padding-right: 24px; }
+.hand-report__header { margin-right: 4px;}
+
+.hand-report__selected-cell{background: var(--overlay-accented-selected);}
+
+.stat-report-hands__loader {
+    min-width: 400px;
+    width: 100%;
+}
+
+.hand-report.empty { min-width: 500px; }
+.hand-report__data-grid.empty { height: 100%;}
+.hand-report__data-grid.empty .data-grid__grid { height: 100%;}
+.hand-report__no-hand-anchor {
+    grid-row: 2 / span 100;
+    grid-column: 1 / span 100;
+    align-self: center;
+    justify-self: center;
+}
+.hand-cell__hand-value-category { max-width: 80px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.hand-report-row__separator.div:last-of-type { display: none;}
+
+.hand-report.empty .data-grid__grid {
+    /*This ensures the correct position for the hand-report_loader in statistics tab*/
+     flex-grow: 1;
+}
+.hand-report__loader {
+    grid-column: 2 / span 100;
+    grid-row: 2 / span 100;
+/*    margin-top: 100px;*/
+}

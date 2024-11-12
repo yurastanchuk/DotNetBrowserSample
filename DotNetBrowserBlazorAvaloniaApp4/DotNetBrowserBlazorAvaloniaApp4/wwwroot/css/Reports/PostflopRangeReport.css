@@ -1,0 +1,14 @@
+.postflop-range-report-empty { gap: 40px; }
+.postflop-range-report-empty__categories {
+    display: grid;
+    gap: 12px 24px;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    color: var(--font-color-low-priority);
+    font-weight: var(--font-color-low-priority); 
+}
+.postflop-range-report-empty__category-bar {
+    background: rgba(var(--font-color-rgb), 0.08);
+    height: 4px;
+    width: 250px;
+}

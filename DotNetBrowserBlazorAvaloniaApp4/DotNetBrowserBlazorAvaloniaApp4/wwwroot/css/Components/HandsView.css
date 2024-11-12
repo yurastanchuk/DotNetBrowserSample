@@ -1,0 +1,36 @@
+﻿.card {
+    border-radius: 3px;
+    width: 16px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards > * {
+    margin-left: 2px;
+}
+
+.cards > *:first-child {
+    margin-left: 0;
+}
+
+.hand-action__early-position-markers-row {
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+.hand-action__early-position-marker {
+    width: 3px;
+    height: 3px;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+
+.hand-view__more-actions {
+    color: var(--font-color-middle-priority);
+    border-bottom: 1px dashed var(--font-color-middle-priority);
+    padding-bottom: 2px;
+    margin-top: 4px;
+}

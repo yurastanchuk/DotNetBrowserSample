@@ -1,0 +1,53 @@
+﻿.positive-amount { color: #C5FF99; }
+.negative-amount { color: #FF998A; } 
+.stat { }
+
+.anchor-stat { gap: 24px; align-items: flex-end;}
+.anchor-stat__main-stat { align-self: flex-start; }
+.anchor-stat__main-stat-value { font-size: 24px; } 
+.stat_priority_middle { opacity: 0.6; font-weight: 200;/*Light*/ }
+.stat_type_anchor { font-size: 22px; font-weight: 600; /*Semibold*/ }
+.stat__caption { max-width: 80px; } 
+.computed-stat__sample { margin-left: 2px; }
+
+.report-stat__name { max-width: 120px; }
+.report-stat__name.selectable { text-decoration: underline; cursor: pointer;}
+.report-stat__name.selectable:hover { color: var(--font-color);}
+.report-stat.selected { color: var(--accent-color);}
+.report-stat__name.selected { color: var(--accent-color);}
+.system-stat-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #F0F0F0;
+    border-radius: 3px;
+}
+
+.package-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    /*Font color must be black becuase the auto-backgrounds are light*/
+    color: rgba(0,0,0, 0.7);
+    font-size: 15px;
+    font-weight: 600;
+}
+.package-icon span { transform: translate(0, -1px); }
+
+.package-icon_package-code_1 { background: #ebdfc7;}
+.package-icon_package-code_2 { background: #36ebc7;}
+.package-icon_package-code_3 { background: #d7ebc7;}
+.package-icon_package-code_4 { background: #c7ebd6;}
+.package-icon_package-code_5 { background: #c7e9eb;}
+.package-icon_package-code_6 { background: #c7dceb;}
+.package-icon_package-code_7 { background: #c7cfeb;}
+.package-icon_package-code_8 { background: #e7d6f4;}
+.package-icon_package-code_9 { background: #f4d0ea;}
+.package-icon_package-code_10 { background: #f6d3d3;}

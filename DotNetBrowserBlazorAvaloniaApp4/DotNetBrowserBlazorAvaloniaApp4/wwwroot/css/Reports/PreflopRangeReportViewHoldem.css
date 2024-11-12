@@ -1,0 +1,59 @@
+﻿.preflop-range-report-holdem {
+    background: #1A1A1A;
+    line-height: 1;
+}
+
+.preflop-range-report-holdem__cell {
+    width: 28px;
+    height: 28px;
+}
+
+.preflop-range-report-holdem__cell.selected {
+    background: var(--overlay-accented-selected);
+}
+
+.preflop-range-report-holdem__cell-frequency_lvl_1 {
+    background: #262626;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.preflop-range-report-holdem__cell-frequency_lvl_2 {
+    background: #454545;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.preflop-range-report-holdem__cell-frequency_lvl_3 {
+    background: #5C5C5C;
+    color: white;
+    font-weight: 200;
+}
+
+.preflop-range-report-holdem__cell-frequency_lvl_4 {
+    background: #7A7A7A;
+    color: white;
+    font-weight: 500;
+}
+
+.preflop-range-report-holdem__cell-abbreviation {
+    margin-top: 3px;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.preflop-range-report-holdem__cell-abbreviation.selected {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+    .preflop-range-report-holdem__cell-hands-count {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+.preflop-range-report-holdem__cell-hands-count.selected {
+    color: white;
+    font-weight: 200;
+}

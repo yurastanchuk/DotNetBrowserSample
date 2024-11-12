@@ -1,0 +1,165 @@
+﻿.players {
+
+}
+
+.player-marker {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    margin: 1px 6px 0px 6px;
+}
+
+.player-marker_fish{
+    background-color: green;
+}
+
+.player-marker_reg {
+    background-color: red;
+}
+
+.player-marker_none {
+    background-color: transparent;
+}
+
+.player-note-icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.players__filter-button {
+    
+}
+
+.players__filter-block {
+    background: #332F2E;
+}
+
+.players__grid {
+    display: grid;
+    background: #3D3938;
+    align-items: center;
+    overflow: scroll;
+    height: 100%;
+}
+
+.players__header-item-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.players__header-item-container:first-child {
+    padding-left: 0px;
+}
+
+
+.players__header-item {
+    background: #332F2E;
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.players__header-item.FishRegIndicator {
+    padding: 0;
+}
+
+
+.players__header-item-container:first-child {
+    padding: 0;
+}
+
+.players__header-shadow {
+    height: 12px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.37) 0%,rgba(0,0,0,0.2) 20%, rgba(255,255,255,0) 100%);
+}
+
+
+.players__header-item:last-child {
+    padding-right: 0px;
+}
+
+.players__column-name {
+    max-width: 40px;
+    overflow-wrap: break-word;
+}
+
+.players_sort_ascending::after {
+    content: '\E7EB';
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    transform: rotate(180deg) translate(-4px, 10px);
+    display: inline-block;
+}
+
+.players_sort_descending::after {
+    content: '\E7EB';
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 10px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    transform: translate(4px, -10px);
+}
+
+.players__nickname {
+    padding-top: 12px;
+    grid-column: 2/-1;
+}
+
+.players__stat {
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.players_vpip-pfr {
+    padding-left: 0;
+}
+
+
+.players__fish-reg-indicator {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    position: relative;
+    top: 4px;
+}
+
+.players__fish-reg-indicator_reg {
+    background-color: #FF3434;
+}
+
+.players__fish-reg-indicator_fish {
+    background-color: #87FF7C;
+}
+
+.winnings {
+    opacity: 1;
+}
+
+.winnings_won {
+    color: #87FF7C;
+}
+
+.winnings_loss {
+    color: #FF3434;
+}

@@ -1,0 +1,14 @@
+﻿.preflop-range-holdem-dialog__cell {
+    width: 32px;
+    height: 32px;
+    color: var(--font-color-low-priority);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .preflop-range-holdem-dialog__cell.selected {
+        color: var(--accent-color);
+        font-weight: 600;
+        background: var(--overlay-accented-selected);
+    }

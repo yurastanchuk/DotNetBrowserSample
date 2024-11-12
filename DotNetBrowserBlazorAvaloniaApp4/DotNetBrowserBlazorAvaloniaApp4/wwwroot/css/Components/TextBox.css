@@ -1,0 +1,53 @@
+﻿.textbox {
+    padding: 4px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--background-depth-1);
+    color: var(--font-color);
+    resize: none;
+    overflow: hidden;
+}
+
+.textbox.default {
+    color: var(--font-color-middle-priority);
+}
+
+.text-input-disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.textbox.nondefault {
+    color: var(--accent-color);
+    background: var(--overlay-accented-selected);
+    font-weight: 600;
+}
+
+    .textbox:focus {
+        caret-color: var(--font-color);
+    }
+    .textbox:focus:not(.not-highlight-border) {
+        border-color: var(--font-color);
+    }
+
+    .textbox.error{
+        border-color: red;
+    }
+
+/*Segoe UI symbol shows -∞ correctly in contrast with Segoe UI */
+.textbox_type_numeric, .textbox_type_date{
+    font-family: Segoe UI Symbol;
+}
+
+.textarea {
+    width: 100%;
+    height: 150px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: var(--background-depth-1);
+    font-size: 16px;
+    resize: none;
+    color: var(--font-color);
+}
+

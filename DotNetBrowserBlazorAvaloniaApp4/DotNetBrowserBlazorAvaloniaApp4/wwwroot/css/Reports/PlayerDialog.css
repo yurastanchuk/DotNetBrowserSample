@@ -1,0 +1,46 @@
+﻿.player-dialog {
+    --popup-background: #4F2626;
+    border-radius: 4px;
+    background: #2A1010;
+    text-align: center;
+    /*height: 800px;
+    min-width: 856px;
+    box-shadow: 0px 5px 22px 23px rgba(0,0,0,0.35);*/
+}
+
+.player-dialog-tabs {margin-left: 40px}
+.player-dialog-tab {padding: 20px 24px;}
+.player-dialog__input { color: var(--font-color); font-weight: var(--font-weight-middle-priority);}
+.player-dialog__searchview { background-color: rgba(255,255,255,0.1); border-radius: 100px;}
+.player-dialog__nickname-cell { color: #FFE6C5;}
+
+
+/*Align the grid with the search box*/
+.player-dialog-entry-grid { margin-left: -7px;} 
+.player-dialog-entry-grid__ignored-player { opacity: 0.3; }
+.player-dialog-grid__nickname-header { margin-left: 8px; }
+.player-dialog__header-text { width: min-content}
+.player-dialog h1 { font-size: 20px;}
+.player-dialog__grid::-webkit-scrollbar-track { margin-top: 32px;}
+.player-dialog-expression { min-height: 150px}
+.player-dialog-button { text-transform: uppercase; padding: 4px 16px}
+.player-dialog-button:hover { background-color: var(--overlay-hovered)}
+.player-dialog-grid__row:hover .player-dialog-grid__button { color: var(--font-color-middle-priority); }
+.player-dialog-grid__row .player-dialog-grid__button { color: transparent; }
+
+.player-dialog__purchase-subscription { margin-top: 200px; }
+.player-dialog__tab-item-player-content { padding-right: 24px;}
+.player-dialog__multiple-player-dialog { padding: 16px 0;}
+.single-player-dialog__add-alias-button { align-self: flex-start; padding: 8px 0;}
+
+.multi-player-dialog { margin-bottom: -8px; /*Stretching down the footer*/}
+.multiple-player-dialog__player-base-filter { padding: 0 24px; align-self: flex-start; }
+.multiple-player-dialog__hand-player-descripion { padding: 0 24px; align-self: flex-start;}
+.multiple-player-dialog__dialog-button { text-transform: uppercase; font-weight: 600;}
+.multiple-player-dialog__stat-expression-editor { padding: 0 24px;}
+.multiple-player-dialog__footer {
+     background:rgba(var(--font-color-rgb), 0.08);
+     justify-content: flex-end;
+     padding: 8px 24px 8px 24px;
+     border-radius: 0 0 4px 4px;
+}

@@ -1,0 +1,7 @@
+.dropdown-box {
+     gap: 12px;
+     padding: 4px 12px;
+     border: 1px solid var(--border-color);
+     border-radius: 4px;
+}
+.dropdown-box__dropdown-indicator { transform: translate(0, 1px); }

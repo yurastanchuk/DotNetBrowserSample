@@ -1,0 +1,57 @@
+.modal-host_modal-type_player-alias-modal { background:#2C1C16 ; padding: 0px; }
+.player-alias-modal { gap: 16px; display: flex; flex-direction: column;}
+.player-alias-modal__header { padding: 24px 24px 0 24px;}
+.player-alias-modal__dialog-buttons { gap: 12px;}
+
+.player-alias-dialog { gap:0px; }
+.player-alias-dialog__header { padding: 0 24px 12px 24px; position: relative; }
+.player-alias-dialog__header:after {
+    content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1000; pointer-events: none;
+    border-bottom: 1px solid var(--border-color);
+}
+.player-alias-dialog__manual-player-dialog { padding: 12px 24px; }
+.player-alias-dialog__alias-player-grid { min-height: 400px; position: relative; padding-top: 12px; }
+.player-alias-dialog__alias-player-grid:after {
+    content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 1000;pointer-events: none;
+    border-right: 1px solid var(--border-color);
+}
+.player-alias-dialog__name-input  { padding: 6px 12px;}
+.player-alias-dialog__footer { background:#41332D; padding: 12px 24px; }
+.player-alias-dialog__body { display: grid; grid-template-columns: 1fr auto;}
+.player-alias-dialog__all-players {
+     gap:8px; 
+     background: rgba(0, 0, 0, 0.1);
+     padding: 16px 24px;
+     display: flex;
+     flex-direction: column;
+     overflow-x: hidden;
+}
+.player-alias-dialog__all-player-grid {}
+.player-alias-dialog .data-grid-row { align-items: center;}
+.player-alias-dialog .data-grid-row .delete-button {opacity: 0;pointer-events:none}
+.player-alias-dialog .data-grid-row:hover { background: var(--overlay-hovered);}
+.player-alias-dialog .data-grid-row:hover .delete-button {opacity: 1;pointer-events:all;}
+
+.player-alias-dialog__add-button {
+    border: 1px solid rgba(var(--font-color-rgb), 0.2);
+    height: 24px;
+    width: 24px;
+    border-radius: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.player-alias-dialog__add-button:after {
+    content: "+";
+    color: rgba(var(--font-color-rgb), 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    transform: translate(0, -2px);
+}
+
+.player-alias-dialog__add-button:hover { color: var(--font-color); border-color: var(--font-color);}
+.player-alias-dialog__add-button:hover:after { color: var(--font-color); }
+.player-alias-dialog__add-button .icon{ display: none; }
+.player-alias-dialog__nickname { color: #FFE6C5;}
+.player-alias-dialog__room {color: var(--font-color-low-priority); font-weight: var(--font-weight-low-priority);}

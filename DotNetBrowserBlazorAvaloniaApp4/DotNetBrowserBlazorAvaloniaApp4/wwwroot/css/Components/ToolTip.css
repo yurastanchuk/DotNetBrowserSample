@@ -1,0 +1,17 @@
+﻿.tool-tip {
+    background: var(--default-background);
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.28);
+    color: var(--font-color);
+    z-index: 1000;
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    padding: 16px;
+    font-size: var(--default-font-size);
+
+}
+
+.tool-tip_shown { display: flex;}
+
+.drag .tool-tip { display: none;}

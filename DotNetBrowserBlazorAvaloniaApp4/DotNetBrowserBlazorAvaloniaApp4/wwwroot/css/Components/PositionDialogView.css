@@ -1,0 +1,8 @@
+﻿.position-dialog {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, var(--toggle-button-block__row-height));
+    overflow:hidden;
+}
+
+.position-dialog__straddle-button { grid-column: span 2; }
+

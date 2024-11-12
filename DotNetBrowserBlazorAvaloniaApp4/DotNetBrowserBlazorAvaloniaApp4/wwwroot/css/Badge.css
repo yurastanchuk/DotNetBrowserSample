@@ -1,0 +1,11 @@
+.badge { border-radius: 2px;}
+.badge__image {
+    width: var(--badge-width);
+    height: var(--badge-height);
+}
+.badge-editor__selected-image {
+    width: var(--badge-width);
+    height: var(--badge-height);
+}
+/*By default, pointer events are disabled for images*/
+.binary-image.clickable { pointer-events: all;}

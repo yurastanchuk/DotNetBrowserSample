@@ -1,0 +1,51 @@
+﻿.add-chip-button {
+    padding-left: 9px;
+    padding-right: 12px;
+    height: 28px;
+    border-radius: 32px;
+    border: 1px solid var(--border-color);
+    background: none;
+    color: var(--font-color-middle-priority);
+    font-weight: var(--font-weight-middle-priority);
+    
+    /*
+        Dirty workaround. !important because gap_1x > first-child sets the margin-left and has higher specificity
+        We need left margin because rounded button has a visual boundary shifted to the right.
+    */
+    margin-left: -2px !important;
+}
+
+.add-chip-button.windows::before {
+    content: '\E710';
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.add-chip-button.macos::before {
+    content: '􀅼';
+    font-family: 'SF Pro';
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.add-chip-button:hover {
+    color: var(--font-color);
+}
+
+.chip {
+    padding: 8px 12px;
+    border-radius: 32px;
+    color: white;
+    background-color: rgba(var( --accent-color-rgb), 0.35);
+    white-space: nowrap;
+    gap: 12px;
+}
+.chip__header { transform: translate(0, -2px); }
+.chip__remove-button {
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    color: rgba(255, 255, 255, 0.35);
+}
+.chip__remove-button:hover { color: white;}

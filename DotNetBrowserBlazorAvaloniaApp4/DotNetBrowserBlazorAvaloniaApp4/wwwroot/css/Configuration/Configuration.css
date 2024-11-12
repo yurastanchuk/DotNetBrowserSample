@@ -1,0 +1,187 @@
+.configuration {
+     background: #292929; 
+     border-radius: 4px; 
+     overflow: hidden;
+     --configuration-background-one: rgba(27, 32, 30, 0.3); 
+     --configuration-background-two: rgba(27, 32, 30, 0.6); 
+     --font-weight-middle-priority: 500;
+     --font-weight-low-priority: 500;
+     box-shadow: var(--shadow-elevation-two);
+     color: rgba(var(--font-color-rgb), 0.8);
+}
+
+.configuration-tab-item__content-header {
+    color: var(--font-color);
+    font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);
+}
+.configuration__header {
+    padding: 8px 24px;
+    color: var(--font-color);
+    font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom);
+}
+.configuration__tab-item-panel { min-width: 200px; padding: 8px 0; overflow-y: auto;}
+
+.configuration__tab-item {padding: 8px 24px;}
+.configuration__tab-item.selected { background: var(--overlay-selected);}
+.configuration__tabs-selected-content {
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: column;
+    background:#2A322E; 
+    overflow: auto;
+}
+.configuration-tab-item__content {
+   padding: 8px 24px; 
+   gap: 24px;
+   background:#2A322E; 
+   flex-grow: 1;
+   align-self: flex-start;
+}
+.configuration-tab-item__reset-configuration-button { color: var(--font-color-low-priority); font-weight: var(--font-weight-low-priority); margin-right: -16px;}
+.configuration-tab-item__caption { font-weight: 500; color: var(--font-color-low-priority); max-width: 420px; }
+
+.room-config__preferred-seats { gap: 8px;}
+.configuration-options-group__header {font-weight: bold; color: var(--font-color); font-size: 16px;}
+
+.username-modal { gap: 16px;}
+.username-modal .room-select-box { align-self: flex-start; }
+.username-modal__grid { grid-template-columns: 1fr auto; gap:8px;}
+.username-config__usernames { gap: 4px;}
+.username-config__room { font-weight: bold;}
+.username-config__room-usernames {
+     padding: 8px 16px;
+     background: var(--configuration-background-one);
+     border-radius: 4px;
+     align-items: flex-start;
+}
+.username-config__room-usernames_in-database { opacity: 0.5;pointer-events: none;}
+.username-config__room-usernames:hover { background: var(--configuration-background-two);}
+.username-config__edit-delete-buttons { opacity: 0; pointer-events: none; }
+.username-config__room-usernames:hover .username-config__edit-delete-buttons { opacity: 0.6; pointer-events: all;}
+
+.rakeback-modal { gap: 16px;}
+.rakeback-modal__grid-header { color: var(--font-color-low-priority); font-weight: normal;}
+.rakeback-modal__grid {
+    grid-template-columns: 1fr auto auto;
+    gap:8px;
+}
+
+.rakeback-config__item { background: var(--configuration-background-one); padding: 16px 16px; border-radius:4px; gap: 16px; font-weight: 500; }
+.rakeback-config__item:hover { background: var(--configuration-background-two); }
+.rakeback-config__grid{ gap: 8px; display: flex; flex-direction: column; }
+.rakeback-config__grid-header { color: var(--font-color-low-priority); }
+.rakeback-config__room { font-weight: bold;}
+.rakeback-config__control-buttons { opacity: 0; pointer-events: none;}
+.rakeback-config__item:hover .rakeback-config__control-buttons { opacity: 0.6; pointer-events: all;}
+
+.color-marker-config { gap: 16px;}
+.color-marker-config__grid-header { color: var(--font-color-middle-priority); font-weight: var(--font-color-middle-priority);}
+.color-marker-config__grid { display: grid; grid-template-columns: repeat(4, auto); gap: 0px 16px; align-items: center; margin: -16px;}
+.color-marker-config__grid-row { display: grid; grid-template-columns: subgrid; grid-column: 1 /span 4; gap: 16px; align-items: center; padding: 8px 16px;}
+.color-marker-config__grid-row:hover {background: var(--overlay-hovered);}
+.color-marker-config__edit-buttons{ opacity: 0; pointer-events: none;}
+
+.color-marker-config__grid-row:hover .color-marker-config__edit-buttons{ opacity: 1; pointer-events:all;}
+
+.currency-config { gap: 16px;}
+.currency-config__rates { gap: 8px; display: flex; flex-direction: column;}
+.currency-rate-option__header { color: var(--font-color-middle-priority); font-weight: var(--font-color-middle-priority);}
+.currency-rate-option__input { color: var(--font-color)!important; }
+
+.club-rate-config { gap: 16px;}
+.club-rate-config__header {  font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom); color: var(--font-color);}
+.club-rate-config__caption { color: var(--font-color-middle-priority); font-weight: var(--font-weight-middle-priority); max-width: 300px;}
+.club-rate-config__room-item  {}
+
+.currency-config__club-rate-config { margin-top: 24px;}
+.currency-config__rates.disabled { opacity: 0.4; pointer-events: none;}
+
+.club-rate-modal__grid { grid-template-columns: 1fr auto auto; gap: 8px; }
+
+.club-rate-config__room-item { background: var(--configuration-background-one); border-radius: 4px; padding: 8px 16px;}
+.club-rate-config__room-item-header { color: var(--font-color-low-priority); font-weight: normal;}
+.club-rate-config__edit-butons { opacity: 0; pointer-events: none; margin-right: -8px;}
+.club-rate-config__room-item:hover .club-rate-config__edit-butons { opacity: 0.6; pointer-events: all;}
+.club-rate-config__room-item:hover { background: var(--configuration-background-two);}
+
+.database-config {gap: 32px;}
+.database-config__databases { gap: 24px;}
+.database-config__select-database-header { color: var(--font-color-low-priority); font-weight: normal;  }
+.database-config__database-grid { gap: 8px; display: flex; flex-direction: column; align-self: flex-start;}
+.database-config__database-item {
+    --font-color: var(--font-color-middle-priority);
+    color: var(--font-color);
+    font-weight: 500;
+    gap: 40px;
+}
+.database-config__database-item:hover { color: white; }
+.database-config__database-item:hover .database-config__delete-database-button { opacity: 1;pointer-events: all;}
+.database-config__database-item:hover:not(.selected) .radio-button__input{ border-color: white;}
+.database-config__database-item.selected {
+    --font-color: var(--accent-color);
+    /*for the radio button border color*/
+    --font-color-middle-priority: var(--accent-color);
+     color: var(--accent-color);
+}
+.database-config__database-radio-button.selected { color: var(--accent);}
+.database-config__delete-database-button { opacity: 0;pointer-events: none;}
+
+.note-config { display: flex; flex-direction: row; gap: 64px;}
+.note-config__note-preview { padding: 8px 16px; border-radius: 4px; }
+
+.game-type-profile-list__add-button { align-self: center;  opacity: 0.4;}
+.game-type-profile-list__tab-item { padding-right: 16px; white-space: normal; max-width: 300px;}
+.game-type-profile { gap: 8px;}
+.game-type-profile__who-is-reg-header { margin-top: 32px;}
+.game-type-profile__delete-button { margin-top: 16px;}
+.reg-filter { gap: 8px;}
+.reg-filter .option { gap: 64px;}
+
+.license-config__serial-input  { opacity: 0.3; pointer-events: none;}
+
+.configuration-tab-item__content.texas-holdem-postflop-categories { align-self: stretch;}
+.configuration-tab-item__content.texas-holdem-postflop-categories { align-self: stretch;}
+.configuration-tab-item__content.short-deck-postflop-categories { align-self: stretch;}
+.configuration-tab-item__content.omaha-postflop-categories { align-self: stretch;}
+
+/*todo: refactor if you use the tabs somewhere else and you don't need the gap'*/
+.game-hand-value-category { margin-left: -24px; margin-right: -24px; }
+.game-hand-value-category__selected-content {  }
+
+.game-board-category { margin-left: -24px; margin-right: -24px; }
+.game-board-category__selected-content { }
+
+.hand-value-category-profile { display: flex; flex-direction: column; gap: 24px;}
+.hand-value-category-profile__grid {}
+.hand-value-category-profile__grid-row:hover { background: var(--overlay-hovered);}
+.hand-value-category-profile__edit-row-buttons { opacity: 0;pointer-events: none;}
+.hand-value-category-profile__grid-row:hover .hand-value-category-profile__edit-row-buttons { opacity: 0.6;pointer-events: all;}
+.hand-value-category-profile__add-button { margin-left: 16px; align-self: flex-start;}
+
+.board-category-profile { margin-top: 8px;}
+.board-category-profile__grid  { display: grid; grid-template-columns: auto auto; align-items: center; gap: 8px; }
+.board-category-profile__edit-row-buttons { opacity: 0.6;}
+.board-category-profile__grid-header { color: var(--font-color-middle-priority); }
+.board-category-profile__add-category-button { align-self: flex-start; margin-left: 16px;}
+.bet-sizing-category-config__table { border: none; background: var(--background-depth-2); border-radius: 8px;}
+.bet-sizing-category-config__table th { border: none; padding-top: 12px; padding-bottom: 12px;}
+.bet-sizing-category-config__table tr { border-bottom: 1px solid var(--border-color);}
+.bet-sizing-category-config__table td { border: none; padding-top: 12px; padding-bottom: 12px;}
+/*make it look like a grid*/
+.bet-sizing-category-config .range__input { min-width: 70px;  }
+.bet-sizing-category-config .select-box__header { min-width: 70px;  }
+
+.alias-config-grid { gap: 4px;}
+.alias-config-grid__alias { background: var(--configuration-background-one); padding: 8px 16px;border-radius: 4px; gap: 64px;}
+.alias-config-grid__alias:hover { background: var(--configuration-background-two);}
+.alias-config-grid__alias-header { gap:16px;}
+.alias-config-grid__alias-player-count { color: var(--font-color-low-priority); font-weight: 500;}
+.alias-config-grid__alias-header { gap:16px;}
+.alias-config-grid__edit-delete-buttons { opacity: 0; pointer-events: none;}
+.alias-config-grid__alias:hover .alias-config-grid__edit-delete-buttons { opacity: 0.6; pointer-events: all;}
+.alias-config-grid__tail { gap: 16px;}
+.alias-config-grid__alias .switch-box-option{ color: var(--font-color-low-priority);}
+
+preflop-range-category-config { align-items: flex-start; }
+.preflop-range-category-config__row:hover .preflop-range-category-config__edit-row-buttons { opacity: 0.6; pointer-events: all; }
+.preflop-range-category-config__edit-row-buttons { opacity: 0; pointer-events: none;}

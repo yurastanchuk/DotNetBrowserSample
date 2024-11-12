@@ -1,0 +1,85 @@
+.editor-stat-table {
+    width: max-content;
+    display: grid;
+    border: .5px solid var(--border-color);
+    align-items: stretch;
+    justify-content: stretch;
+    --accent-color: #0BA3D7;
+}
+
+.editor-stats-table__grid-cell {
+    display: flex; 
+    flex-direction: column;
+    justify-content: stretch;
+    border: .5px solid rgba(var(--font-color-rgb), 0.06);
+    line-height: 1.2em;
+    /*10 October 2024. Andrew. I am not sure why the line height here was 0.66 but 
+      it caused wrong layout of a cell with a wrapped multiline text*/
+/*    line-height: 0.66;*/
+}
+
+.editor-stats-table__grid-cell-drop-target { flex-grow: 1; }
+/*.editor-stats-table__grid-cell-drop-target.dragover::after {
+     border: 1px solid var(--border-color);
+     content: "";
+     position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+     background: var(--overlay-hovered);
+}*/
+
+.editor-stat-table__cell-input-textbox {
+    background: transparent;
+    padding: 0;
+    border: none;
+    min-width: 0;
+    line-height: normal;
+}
+
+.editor-stats-table__selection-area.selected { border: .5px solid var(--accent-color); }
+.editor-stats-table__selection-area.selected-left { border-left: .5px solid #00BEFF; }
+.editor-stats-table__selection-area.selected-top { border-top: .5px solid #00BEFF; }
+.editor-stats-table__selection-area.selected-right { border-right: .5px solid #00BEFF; }
+.editor-stats-table__selection-area.selected-bottom { border-bottom: .5px solid #00BEFF; }
+.editor-stats-table__selection-area.multi-selected {
+    pointer-events: none;
+    background: rgba(11, 163, 215, 0.3);
+    z-index: 100;
+}
+/*.editor-stats-table__grid-cell-underlayer { border: .5px solid var(--border-color); }*/
+
+.editor-stat-table__note-icon-content {width: 30px; height: 22px; background: #404040;position: relative;}
+.editor-stat-table__note-icon-marker {position: absolute; left: 0; bottom: 0; width: 12px; height: 12px; background: var(--font-color);}
+.editor-stat-table__system-cell-content {}
+
+.editor-stat-table__hand-counter-content {
+    border: 1px solid var(--font-color);
+    border-radius: 2px;
+    height: 16px;
+    width: 20px;
+    margin: 4px;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-stat-table__hand-counter-content::after {
+    content: '1';
+    transform: translate(-1px, -1px);
+    font-weight: bold;
+}
+
+.cell-alignment_TopLeft {align-items: flex-start;justify-content: flex-start;}
+.cell-alignment_TopCenter{align-items: flex-start;justify-content: center;}
+.cell-alignment_TopRight {align-items: flex-start;justify-content: flex-end;}
+
+.cell-alignment_CenterLeft {align-items: center;;justify-content: flex-start;}
+.cell-alignment_CenterCenter{align-items: center;justify-content: center;}
+.cell-alignment_CenterRight {align-items: center;justify-content: flex-end;}
+
+.cell-alignment_BottomLeft {align-items: flex-end; justify-content: flex-start;}
+.cell-alignment_BottomCenter{align-items: flex-end; justify-content: center;}
+.cell-alignment_BottomRight {align-items: flex-end; justify-content: flex-end;}
+.cell-alignment_StretchStretch {align-items: stretch; justify-content: stretch;}
+
+.editor-stat-table__alignment-icon {filter: invert(100%); opacity: 0.5;}
+.editor-stat-table__alignment-icon.selected { opacity: 1; }

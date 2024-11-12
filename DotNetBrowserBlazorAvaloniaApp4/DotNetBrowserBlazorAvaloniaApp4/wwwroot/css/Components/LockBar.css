@@ -1,0 +1,4 @@
+.lock-bar {
+    padding: 8px 24px;
+    background: rgba(var(--font-color-rgb), 0.1);
+}

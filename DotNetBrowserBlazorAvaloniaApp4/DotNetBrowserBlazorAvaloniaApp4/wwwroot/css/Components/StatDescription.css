@@ -1,0 +1,41 @@
+﻿.stat-description { --expression-accent-color: red; display: flex; flex-direction: column; line-height: 1em;}
+.show-up-settings-description { line-height: 1em; gap:8px;   }
+.stat-description .named-separator__header { text-transform: none; font-weight: bold; color: var(--font-color);}
+.stat-description__stat-name { font-weight: 600; }
+.stat-description__street-name {color: var(--accent-color); font-weight: 600; }
+.stat-description__action-type {
+    font-weight: 600;
+    color: var(--font-color);
+}
+.stat-description__player-action-type { text-decoration: underline; }
+.stat-description__action-description {
+     color: var(--font-color-middle-priority);
+     font-weight: var(--font-weight-middle-priority);
+     gap: 6px;
+     max-width: 300px;
+}
+
+.hand-filter-description { white-space: nowrap; gap: 8px;}
+.hand-filter-description__option-title { white-space: nowrap; }
+
+.user-stat-description {
+    gap: 8px;
+}
+.stat-description__range {
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+
+.hand-street-filter-description { }
+.hand-street-filter-description__actions { gap: 8px; align-items: flex-start;}
+.hand-street-filter-description__or { align-self: center; }
+
+.hand-street-filter-description__action-row {
+    border-radius: 4px;
+    background: var(--background-depth-1);
+    padding: 12px;
+    gap: 8px;
+}
+.stat-expression-description { gap: 8px; max-width: 600px; white-space: normal; line-height: 1.5em;}
+.hand-street-option-description { gap: 4px; font-weight: 400;}

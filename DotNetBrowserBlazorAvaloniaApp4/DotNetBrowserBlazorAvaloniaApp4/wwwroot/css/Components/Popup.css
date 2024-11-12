@@ -1,0 +1,11 @@
+.popup {
+    display: none;
+    position: fixed;
+    border-radius: 4px;
+    background: var(--popup-background);
+    box-shadow: var(--shadow-elevation-two);
+    z-index: 1001;
+    max-height: 90vh;
+}
+
+.popup.opened { display: flex;}

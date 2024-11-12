@@ -1,0 +1,8 @@
+﻿.marked-hand-dashboard {
+     background: #323232;
+     box-shadow: var(--shadow-elevation-two);
+     border-radius: 4px;
+}
+
+.marked-hand-dashboard__header { padding: 8px 8px 8px 24px;}
+.marked-hand-dashboard__first-page{ flex-grow: 1;}

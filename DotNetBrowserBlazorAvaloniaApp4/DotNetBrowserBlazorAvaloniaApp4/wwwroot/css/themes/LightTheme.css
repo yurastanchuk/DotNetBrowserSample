@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #139105;
+    --accent-color: #139105;
+    --accent-color-middle-priority: rgba(19, 145, 5, 0.3);
+    --alternative-accent-color: rgb(100, 100, 255);
+    --font-color: black;
+    --font-color-rgb: 0,0,0;
+    --font-color-middle-priority: rgba(0,0,0,0.6);
+    --font-color-middle-priority-hovered: rgba(0,0,0, 0.75);
+    --font-color-low-priority: rgba(0,0,0, 0.35);
+    --font-color-caption: rgba(0,0,0,0.4);
+    --font-color-background-accented: white;
+    --font-color-middle-priority-background-accented: rgba(255, 255, 255, 0.5);
+    --error-font-color: red;
+    --font-weight-middle-priority: 200;
+    --font-low-middle-priority: 200;
+    --overlay-selected: rgba(0,0,0,0.12);
+    --overlay-hovered: rgba(0,0,0,0.06);
+    --overlay-focused: rgba(0,0,0, 0.18);
+    --overlay-accented-selected: rgba(19, 145, 5,0.12);
+    --overlay-accented-hovered: rgba(19, 145, 5,0.06);
+    --overlay-accented-focused: rgba(19, 145, 5, 0.18);
+    --default-background: white;
+    --popup-background: var(--default-background);
+    --background-depth-1: rgba(0,0,0, 0.06);
+    --background-depth-2: rgba(0,0,0, 0.12);
+    --background-depth-3: rgba(0,0,0, 0.18);
+    --background-accented: rgba(19, 145, 5, 0.6);
+    --border-color: rgba(0,0,0,0.12);
+    --inner-border-color: rgba(0,0,0,0.06);
+    --report-filter-background: #122225;
+    --icon-image-filter: invert(0);
+    color: var(--font-color);
+}

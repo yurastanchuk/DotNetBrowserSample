@@ -1,0 +1,23 @@
+.display-options-view__grid { display: grid; }
+
+.display-options-view__grid > * {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.display-options-view__grid-header {
+    font-weight: 600;
+    font-size: 12px;
+    opacity: 0.4;
+}
+
+.display-options-view__grid-row-delete { justify-self: center; }
+
+.display-options-view__grid-row-delete > a {
+    font-size: 12px;
+    padding: 5px;
+    width: auto;
+    color: var(--font-color-low-priority);
+    transform: translate(0, 1px);
+}

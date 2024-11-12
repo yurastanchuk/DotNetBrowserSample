@@ -1,0 +1,9 @@
+﻿.login-dialog {
+    padding: 24px 36px;
+    --accent-color: #007EA6;
+}
+
+.login-dialog__login-button {
+    background: #007EA6;
+    color: white;
+}

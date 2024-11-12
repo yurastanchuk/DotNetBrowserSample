@@ -1,0 +1,24 @@
+﻿/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.08);
+}
+
+::-webkit-scrollbar-corner {
+    visibility: collapse;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(var(--font-color-rgb), 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--font-color-rgb), 0.4);
+}

@@ -1,0 +1,33 @@
+﻿.slider {
+    
+}
+
+.slider__rod {
+    border: 1px solid var(--border-color);
+    height:1px;
+}
+
+.slider__start {
+    width: 5px;
+    height: 5px;
+    background: var(--border-color);
+    position: relative;
+    left: -2px;
+    top: 2px;
+}
+
+.slider__end {
+    width: 5px;
+    height: 5px;
+    background: var(--border-color);
+    position: absolute;
+    left: calc(100% + -2px);
+    top: 2px;
+}
+
+.slider__lever {
+    width: 15px;
+    height: 15px;
+    background: black;
+}
+

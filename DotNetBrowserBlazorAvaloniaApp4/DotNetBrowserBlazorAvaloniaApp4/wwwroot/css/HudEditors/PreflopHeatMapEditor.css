@@ -1,0 +1,107 @@
+﻿.preflop-heat-map-editor { }
+
+.preflop-heat-map-editor__map {
+    background: #323232;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(13, auto);
+    grid-template-Rows: repeat(13, auto);
+}
+
+.preflop_heat-map-editor_display-mode_Abbreviations .preflop_heat-map-editor__cell {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.preflop_heat-map-editor_display-mode_AbbreviationsWithHandCount .preflop_heat-map-editor__cell{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.preflop_heat-map-editor_display-mode_GridNoAbbreviations {
+    display: grid;
+    grid-template-columns: repeat(14, auto);
+    grid-template-rows: repeat(14, auto);
+}
+
+.preflop_heat-map-editor_display-mode_NoGridNoAbbreviations .preflop_heat-map-editor__cell{
+    height: 6px;
+    width: 6px;
+} 
+
+.preflop_heat-map-editor_display-mode_GridNoAbbreviations .preflop_heat-map-editor__cell {
+    width: 12px;
+    height: 12px;
+}
+
+.preflop-heat-map-editor_grid-header-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 8px;
+}
+
+.preflop_heat-map-editor__cell.suited { background: #212121; }
+.preflop_heat-map-editor__cell.pair { background: #262626; }
+
+.preflop-heat-map-editor__map_row-highlighter { height: 1px; align-items: end;  background: black;}
+.preflop-heat-map-editor__map_column-highlighter { width: 1px; align-items: end; background: black;}
+
+.preflop-heat-map-editor__resize-block {
+    position: absolute; 
+    margin: 6px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow_elevation_two);
+}
+
+.preflop-heat-map-editor__resize-button {
+    width: 26px;
+    height: 26px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px;
+    background: black;
+    color: white;
+}
+
+.preflop-heat-map-editor__resize-button:hover {background: #212121;}
+
+.preflop-heat-map-editor__resize-button:disabled {display: none;}
+
+.preflop-heat-map-editor__cell-count {
+    font-size: 9px; 
+    color: rgba(255, 255, 255, 0.25); 
+    font-weight: 100;
+}
+
+.preflop-heat-map-editor__stat-dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 8px 16px; 
+    border-radius: 4px;
+    box-shadow: var(--shadow-elevation-two);
+}

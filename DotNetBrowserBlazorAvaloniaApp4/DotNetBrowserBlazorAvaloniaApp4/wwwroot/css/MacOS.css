@@ -1,0 +1,35 @@
+﻿@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SFProText-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SFProText-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Segoe UI Symbol';
+    src: url('../fonts/SFProText-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('../fonts/SFMono-Regular.otf') format("opentype");
+}
+
+*,
+*::after,
+*::before {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+input, textarea, a {
+    user-select: initial;
+    -webkit-user-select: initial;
+    cursor: initial;
+}
+

@@ -1,0 +1,2 @@
+﻿.draggable-container { width: fit-content; display: contents;}
+.draggable-container:hover { background: var(--overlay-hovered); }

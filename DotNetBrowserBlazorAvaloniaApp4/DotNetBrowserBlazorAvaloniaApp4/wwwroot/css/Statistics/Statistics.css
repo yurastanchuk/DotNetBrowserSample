@@ -1,0 +1,115 @@
+.statistic-tabs__page {}
+.statistic-tabs__page_tab-placement_left-top { padding: 0 16px;}
+.statistic-tabs__page_tab-placement_bottom-left { padding: 0 16px 16px 16px;}
+.statistic-page {
+    display: grid; 
+    grid-template-columns: repeat(var(--column-count), auto);
+    grid-template-rows: repeat(var(--row-count), auto);
+    /*we need this gap to separate auto-layouted tables if the user has multiple tables on the page*/
+    gap: 8px;
+    align-items: start;
+}
+.statistic-page-item { display: flex;}
+.preflop-stat-statistic { display: flex; flex-direction: column; gap: 16px; position: relative; padding: 0px 16px; }
+.preflop-stat-statistic__main-stats {
+    display: grid; 
+    gap: 8px 16px;
+    grid-template-columns: auto auto;
+    align-self: flex-start;
+}
+.preflop-stat-statistic__secondary-stats { 
+    display: flex;
+    gap: 16px; 
+    /*If set fit-content then the popups flicker when the user opens them*/
+    width: 374px;
+}
+.preflop-stat-statistic__preflop-heat-map { align-self: flex-start; margin: 8px 16px;}
+.preflop-stat-statistic__tabs { margin-left: -16px; margin-right: -16px; background: #282828; }
+.preflop-stat-statistic__tab-content { min-height: 250px;}
+.preflop-stat-statistic__note-dialog {
+     max-height: 400px;
+     flex-grow: 0!important;
+     align-self: flex-start;
+     /* Without this hand2note shows excessive scroll bars on a stat page */
+     flex-shrink: 0;
+}
+.preflop-stat-statistic__add-note-button { align-self: flex-start; }
+
+.postflop-stat-statistic { display: flex; flex-direction: column; gap: 16px; position: relative; padding: 0px 16px; }
+.postflop-stat-statistic__main-stats {
+    display: grid; 
+    gap: 8px 16px;
+    grid-template-columns: auto auto auto;
+    align-self: flex-start;
+    align-items: start;
+}
+.postflop-stat-statistic__secondary-stats { display: flex; gap: 16px; }
+.postflop-stat-statistic__tabs { margin-left: -16px; margin-right: -16px; background: #282828; }
+.postflop-stat-statistic__tab-content { min-height: 250px;} 
+.postflop-stat-statistic__note-dialog {
+     max-height: 400px;
+     flex-grow: 0!important;
+     align-self: flex-start;
+     /* Without this hand2note shows excessive scroll bars on a stat page */
+     flex-shrink: 0;
+}
+.postflop-stat-statistic__add-note-button { align-self: flex-start; }
+
+.postflop-stat-split-grid__no-cases-row { opacity: 0.3;}
+.preflop-stat-split-grid__no-cases-row { opacity: 0.3;}
+
+.statistic-table {
+     display: grid;
+     grid-template-columns: repeat(var(--column-count), auto);
+     grid-template-rows: repeat(var(--row-count), auto);
+}
+
+.statistic-table-cell { white-space: nowrap;}
+.statistic-table-cell.selectable { position: relative; cursor: pointer;}
+.statistic-table-cell.selectable:hover::after {
+    content: "";
+    background: var(--overlay-accented-hovered); 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 2px;
+} 
+.statistic-table-cell.selected { position: relative;}
+.statistic-table-cell.selected::after {
+    content: "";
+    background: var(--overlay-accented-selected)!important;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+.stat-value-sample { align-items: flex-end; gap: 4px;}
+.stat-abbreviation-or-name { color: var(--font-color-middle-priority); font-weight: var(--font-weight-middle-priority);}
+.stat-name-info__icon { color: var(--font-color-low-priority); transform: translate(0, 1px);}
+
+.stat-cell { position: relative;}
+.stat-note-indicator {
+     width: 7px;
+     height: 7px;
+     position: absolute;
+     top:-2px;
+     /*16px is the size of the two digit number and the default left padding.*/
+     left: 16px; 
+     background: red;   
+     z-index: 1000;
+}
+
+hand-container {
+     border: 1px solid var(--border-color);
+     border-radius: 5px; 
+     overflow: auto;
+}
+.hand-container__stat-name { padding-left: 32px; padding-top:8px;}
+

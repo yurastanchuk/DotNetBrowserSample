@@ -1,0 +1,9 @@
+﻿.range {
+    display: flex; 
+    gap: 4px;
+    align-items: center;
+}
+.int-range { display: flex; flex-direction: row; gap: 4px; align-items: center;}
+.range__separator {
+    color: var(--font-color-low-priority);
+}

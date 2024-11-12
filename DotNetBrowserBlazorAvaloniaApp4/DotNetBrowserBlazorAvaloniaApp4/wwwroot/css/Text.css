@@ -1,0 +1,51 @@
+﻿
+body {
+    --default-font-size: 14px;
+    font-size: 14px;
+    font-family: "Segoe UI";
+    /*Can't use color here since we need to use themes*/
+    --header-two-font-size: 20px;
+    --header-two-font-weight: 400;
+    --header-two-margin-bottom: 4px;
+    --h3-font-size: var(--default-font-size);
+    --h3-font-weight: 600;
+}
+
+h1 { font-size: 26px; font-weight: 200; margin-bottom: 6px;}
+h2 { font-size: var(--header-two-font-size); font-weight: var(--header-two-font-weight); margin-bottom: var(--header-two-margin-bottom); }
+
+.caption {font-size: 14px; color: var(--font-color-caption); }
+.priority_high { color: var(--font-color); font-weight: 400;}
+.priority_middle {color: var(--font-color-middle-priority); font-weight: 200;}
+.priority_low {color: var(--font-color-low-priority); font-weight: 200;}
+.accent { color: var(--accent-color); }
+
+.h1-caption {}
+.h1-caption__caption { color: var(--font-color-middle-priority);}
+
+.text_align_right { text-align: right; }
+.text_align_left { text-align: left; }
+.text_align_center { text-align: center; }
+.text_overflow_ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis }
+
+.bold {font-weight: 600;}
+.semibold {font-weight: 500;}
+.italic {font-style: italic; }
+.underlined { text-decoration: underline; }
+.uppercase { text-transform: uppercase; }
+.no-wrap { white-space: nowrap; }
+.wrap-pre-line { white-space: pre-line; }
+.segoe-icon { font-family: "Segoe MDL2 Assets"; }
+.error {color: var(--error-font-color);}
+
+a {
+    text-decoration: underline;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+[contentEditable=true]:empty:before {
+    content: attr(data-text);
+    color: var(--font-color-low-priority);
+    font-weight: 200;
+    cursor: text;
+}

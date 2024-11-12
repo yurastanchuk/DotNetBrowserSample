@@ -1,0 +1,38 @@
+
+.font-template-select-box__popup { padding: 16px; border-radius: 4px; }
+
+.no-font-template {
+    border: 1px solid rgba(0, 0, 0, 2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.font-template-dialog { display: flex; }
+.font-template-dialog__template-container { padding: 4px 8px; cursor: pointer; }
+.font-template-dialog__template-container:hover { }
+.font-template-dialog__template-container:hover .font-template-preview {
+    box-shadow: var(--shadow-elevation-one);
+}
+
+.font-template-preview {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+.font-template-selext-box__header-preview { font-size: 14px!important; }
+
+
+.font-template-editor { gap: 16px; }
+.font-template-editor__font-options{
+     opacity: 0.3;
+     pointer-events: none;
+     gap: 16px; 
+     display: flex; 
+     flex-direction: column;
+}
+.font-template-editor.editing .font-template-editor__font-options { opacity: 1; pointer-events: all; }
+.font-template-editor__control-buttons { gap: 16px;}
+

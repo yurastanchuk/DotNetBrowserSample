@@ -1,0 +1,80 @@
+﻿.postflop-histogram {
+    --row-gap: 8px;
+    display: grid;
+    grid-template-columns: auto auto clamp(100px, 50%, 400px) 1fr;
+    grid-template-rows: auto repeat(var(--items-count), auto) 1fr;
+    align-items: start;
+    row-gap: var(--row-gap);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+    padding-bottom: var(--row-gap);
+}
+
+.postflop-histogram-bar-hand-count { min-width: 200px; color: var(--font-weight-middle-priority); font-weight: var(--font-weight-middle-priority); }
+.postflop-histogram-bar {height: 6px;}
+
+.postflop-histogram::-webkit-scrollbar-track { margin-top: 34px; }
+.postflop-historgram__indicator { height: 5px; }
+
+.postflop-histogram__category { cursor: pointer;}
+.postflop-histogram__category:hover { color: var(--font-color); } 
+.postflop-histogram__category.selected { color: var(--accent-color); font-weight: 500; }
+.postflop-histogram__indicator:hover { /*this is an inner border*/ box-shadow: 0 0 4px #fff inset; }
+.postflop-histogram__bar-hand-count  { cursor: pointer; }
+.postflop-histogram__hand-count:hover{ color: var(--font-color);}
+
+.postflop-histogram-restricted {
+    width: max-content;
+    max-width: 400px;
+    font-size: 12px;
+    gap: 4px;
+}
+.postflop-histogram-mini:not(.size-to-parent) {
+    display: flex;
+    width: 240px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 2px 2px;
+    position: relative;
+}
+.postflop-histogram-mini__weak-hands-indicator {
+    display: flex;
+    pointer-events: none;
+    margin-left: clamp(0.5px, 8px, 4%);
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+    height: clamp(2px, 16px, 90%);
+    border-radius: 2px;
+    background: rgba(43, 43, 43, 0.8);
+    z-index: 1;
+    font-size: clamp(0.5px, 12px, 85%);
+    padding-inline: clamp(1px, 8px, 5%);
+    position: absolute;
+}
+.postflop-histogram-mini.empty {
+     width: 240px;
+     height: 20px;
+     background: rgba(255, 255, 255, 0.04);
+     border: 1px solid rgba(255, 255, 255, 0.05);
+     border-radius: 2px;
+}
+.postflop-histogram-mini__weak-hands-indicator.size-to-parent{ font-size: 11px;}
+.postflop-histogram-mini__cell:first-child { border-radius: 2px 0px 0px 2px; }
+.postflop-histogram-mini__cell:last-child { border-radius: 0px 2px 2px 0px; }
+.postflop-histogram-mini__cell.selectable { position: relative; cursor: pointer; }
+.postflop-histogram-mini__cell.selectable:hover { border: 1px solid rgba(255, 255, 255, 0.4); }
+.postflop-histogram-mini__cell.selected {
+    /*content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;*/ 
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+}
+
+.postflop-histogram-grid__empty-row { opacity: 0.3; font-weight: 200; cursor: default;}
+.postflop-histogram-grid.empty { height: 100%; }
+.postflop-histogram-grid__no-hand-anchor { grid-row: 2 / span 100; grid-column: 1 / span 100; align-self: center; justify-self: center;}
+
+.postflop-histogram-restriced__category { color: rgba(var(--font-color-rgb), 0.8); cursor: pointer;}
+.postflop-histogram-restriced__category:hover { color: rgba(var(--font-color-rgb), 1);}

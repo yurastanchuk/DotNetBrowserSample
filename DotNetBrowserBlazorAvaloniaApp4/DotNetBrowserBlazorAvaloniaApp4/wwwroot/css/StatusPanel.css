@@ -1,0 +1,47 @@
+﻿.status-panel {}
+
+.status-panel__link-button {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 1.5px;
+}
+
+.status-panel__link-button:hover {
+    cursor: pointer;
+    color: var(--font-color-middle-priority-hovered);
+}
+
+.status-panel__link-button.disabled:hover {
+    cursor: default;
+    color: var(--font-color-middle-priority);
+}
+
+.status-panel__extend-button {
+    color: var(--accent-color);
+    opacity: 0.75;
+}
+
+.status-panel__extend-button:hover {
+    color: var(--accent-color);
+    opacity: 1;
+}
+
+.status-panel__stop-button { padding: 2px 6px; font-size: 12px; border-radius: 2px;}
+
+.auto-import-indicator {
+    display: none;
+    background: grey;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.auto-import-indicator_active {
+    display: block;
+    background: green;
+}
+
+.status-panel__expiring-license { color: red; font-weight: bold; }
+.status-panel__free-license {color: red; font-weight: bold;}
+
+.status-panel__attention { color: red;font-weight: 500}
